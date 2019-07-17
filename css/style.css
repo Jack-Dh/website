@@ -368,7 +368,7 @@ ul.agile_forms li {
 }
 
 .w3layouts-banner-top1 {
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    /*background: url(../images/banner1.jpg) no-repeat 0px 0px;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -378,7 +378,7 @@ ul.agile_forms li {
 }
 
 .w3layouts-banner-top2 {
-    background: url(../images/banner2.jpg) no-repeat 0px 0px;
+    /*background: url(../images/banner2.jpg) no-repeat 0px 0px;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1063,15 +1063,41 @@ div#graph-wrapper button {
 }
 
 /*---- Nav ---*/
-.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+/*.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    position: absolute;*/
+/*    cursor: pointer;*/
+/*    z-index: 100;*/
+/*    background: #222 url(../images/left.png) no-repeat 7px 7px;*/
+/*    top: 5% !important;*/
+/*    display: block;*/
+/*}*/
+.nbs-flexisel-nav-left:hover, .nbs-flexisel-nav-right:hover {
+    background-color: #222 !important;
+}
+
+.nbs-flexisel-nav-left {
     width: 40px;
     height: 40px;
     position: absolute;
     cursor: pointer;
     z-index: 100;
-    background: #222 url(../images/left.png) no-repeat 7px 7px;
-    top: -13% !important;
+    left: 0% !important;
+    top: 45% !important;
+    background: #b1b3b8 url(../images/left.png) no-repeat 7px 7px;
+    display: block;
+}
 
+.nbs-flexisel-nav-right {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    right: 0% !important;
+    background: #b1b3b8 url(../images/right.png) no-repeat 7px 7px !important;
+    top: 45% !important;
     display: block;
 }
 
@@ -5382,9 +5408,27 @@ h3.agileinfo_sign {
     src: url('../fonts/STHeitiSCMedium.ttf')
 }
 
+@font-face {
+    font-family: Playfair;
+    src: url("../fonts/Playfair Display.ttf");
+}
+@font-face {
+    font-family: SourceHanSansCN-Bold;
+    src: url("../fonts/SourceHanSansCN-Bold.ttf");
+}
 
-.FloatingButtons {
+.clients {
     font-family: myfont;
+    font-weight: bold;
+}
+
+.Our {
+    font-family: Playfair !important;
+    font-style: normal;
+}
+
+.FloatingButtons, #myTab span {
+    font-family: myfont !important;
 
 }
 
@@ -5402,6 +5446,7 @@ h3.agileinfo_sign {
     /*outline: none;*/
 }
 
+
 .bagStyle {
     background: #224e6b;
     color: #ffffff;
@@ -5412,12 +5457,26 @@ h3.agileinfo_sign {
 */
 .FloatingButton {
     position: absolute;
-    bottom: -5%;
+    bottom: -10%;
     width: 90%;
     display: flex;
     left: 5%;
     padding: 0;
     justify-content: space-between;
+    background: #ffffff;
+    -webkit-box-shadow: #ccc 0px 10px 10px;
+    -moz-box-shadow: #ccc 0px 10px 10px;
+    box-shadow: #ccc 0px 10px 10px;
+}
+
+.FloatingButtonabout {
+    position: absolute;
+    bottom: -10%;
+    width: 90%;
+    /*display: flex;*/
+    left: 5%;
+    padding: 0;
+    /*justify-content: space-between;*/
     background: #ffffff;
     -webkit-box-shadow: #ccc 0px 10px 10px;
     -moz-box-shadow: #ccc 0px 10px 10px;
@@ -5566,11 +5625,20 @@ h3.agileinfo_sign {
     width: 100%;
     padding: 10%;
     min-height: 300px;
-    text-align:center ;
+    text-align: center;
     background: url("../images/Aboutus/关于我们_07.png");
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.Culture div{
+/*悦为实力*/
+.power {
+    width: 100%;
+    padding: 10%;
+    min-height: 300px;
+    text-align: center;
+    background: url("../images/channels/跨境业务_06.png");
+    background-size: 100% 100%;
+}
+.Culture div {
     margin-top: 10%;
     color: #ffffff;
     /*width: 20%;*/
@@ -5579,13 +5647,68 @@ h3.agileinfo_sign {
     padding: 10px;
     border: 1px solid #ffffff;
 }
-.Culture p{font-size: 1.6rem}
-.Culture i{font-size: 3rem}
-.Culturehover{
+
+.Culture p {
+    font-size: 1.6rem
+}
+
+.Culture i {
+    font-size: 3rem
+}
+
+.Culturehover {
     background: linear-gradient(top, #38aeeb, #0162a2);
     background: -ms-linear-gradient(top, #38aeeb, #0162a2);
     background: -webkit-linear-gradient(top, #38aeeb, #0162a2);
     background: -moz-linear-gradient(top, #38aeeb, #0162a2);
-    border: none!important;
+    border: none !important;
+}
 
+.informationselect {
+    background-color: #318cb8 !important;
+    color: #ffffff !important;
+    padding: 3%
+}
+
+
+.bandImg {
+    width: 100%!important;
+    /*border: 1px solid;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bandImg img{
+    max-width: 15%;
+    height: auto;
+
+              /* 支持CSS3的浏览器（FF 1.5也支持）*/
+
+}
+.mouver{
+    filter:alpha(opacity=30);  /* IE 浏览器支持 */ ;
+    -moz-opacity:0.3;          /* 遨游浏览器 火狐浏览器 支持 */ ;
+    opacity: 0.3;              /* 支持CSS3的浏览器（FF 1.5也支持）*/
+}
+.Pointsing{
+
+    /*height: 260px;*/
+    background-color: #224e6b;
+}
+
+.dataservices{
+    background: url("../images/channels/dataServices/数据服务_05.png");
+    padding: 10%;
+    /*background-size: 100% 100%;*/
+    text-align: center;
+}
+/*视觉优势*/
+.visualadvantage{
+    background: url("../images/channels/visual/品牌视觉_06.png");
+    padding: 10%;
+    /*background-size: 100% 100%;*/
+    text-align: center;
+}
+.market:hover{
+    background-color: #224e6b!important;
 }

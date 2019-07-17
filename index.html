@@ -5,6 +5,7 @@
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="ie-stand">
     <meta name="keywords" content=""/>
     <!-- //custom-theme -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
@@ -61,10 +62,10 @@
                             <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">全渠道代运营<b
                                     class="caret"></b></a>
                             <ul class="dropdown-menu agile_short_dropdown">
-                                <li><a href="icons.html">跨境业务</a></li>
-                                <li><a href="typography.html">数据服务</a></li>
-                                <li><a href="typography.html">整店托管运营</a></li>
-                                <li><a href="typography.html">品牌视觉</a></li>
+                                <li><a href="./views/channels/cross-border.html">跨境业务</a></li>
+                                <li><a href="./views/channels/dataServices.html">数据服务</a></li>
+                                <li><a href="./views/channels/wholeShop.html">整店托管运营</a></li>
+                                <li><a href="./views/channels/visual.html">品牌视觉</a></li>
                                 <li><a href="typography.html">品牌策划</a></li>
                                 <li><a href="typography.html">客服服务</a></li>
                                 <li><a href="typography.html">仓储物流</a></li>
@@ -75,7 +76,7 @@
                                     class="caret"></b></a>
                             <ul class="dropdown-menu agile_short_dropdown">
                                 <li><a href="case.html">品牌集锦</a></li>
-                                <li><a href="typography.html">成功案例</a></li>
+                                <li><a href="case.html">成功案例</a></li>
 
                             </ul>
                         </li>
@@ -111,7 +112,6 @@
         <ul>
             <li>
                 <div class="w3layouts-banner-top">
-
                     <div class="container">
                         <img src="./images/1920-950.jpg">
                     </div>
@@ -120,31 +120,14 @@
             <li>
                 <div class="w3layouts-banner-top w3layouts-banner-top1">
                     <div class="container">
-                        <div class="agileits-banner-info">
-
-                            <h3>Best Business Support</h3>
-                            <p>Planning Your Dream</p>
-                            <div class="more">
-                                <a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Read
-                                    More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+                        <img src="./images/1920-950.jpg">
                     </div>
                 </div>
             </li>
             <li>
                 <div class="w3layouts-banner-top w3layouts-banner-top2">
                     <div class="container">
-                        <div class="agileits-banner-info">
-
-                            <h3>Business Consultancy </h3>
-                            <p>Grow Your Business.</p>
-                            <div class="more">
-                                <a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Read
-                                    More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-
+                        <img src="./images/1920-950.jpg">
                     </div>
                 </div>
             </li>
@@ -161,19 +144,19 @@
         </div>
     </div>
     <div id="FloatingButton" class="FloatingButton">
-        <div class="navbotton bagStyle" onclick="jump('customers')" style="border-right: 1px solid #eaeaea">
+        <div class="navbotton bagStyle text-nowrap" onclick="jump('customers')" style="border-right: 1px solid #eaeaea">
             <span class="glyphicon glyphicon-user" style="margin-right: 6px"></span>品牌客户
         </div>
 
-        <div class="  navbotton" onclick="jump('business')" style="border-right: 1px solid #eaeaea">
+        <div class=" navbotton text-nowrap" onclick="jump('business')" style="border-right: 1px solid #eaeaea">
             <span class="glyphicon glyphicon-stats" style="margin-right: 6px"></span>主营业务
         </div>
 
-        <div class=" navbotton" onclick="jump('advantage')" style="border-right: 1px solid #eaeaea">
-            <span class="glyphicon glyphicon-ok-sign" style="margin-right: 6px"></span>悦为优势
+        <div class=" navbotton text-nowrap" onclick="jump('advantage')" style="border-right: 1px solid #eaeaea">
+            <span class="glyphicon glyphicon-ok-sign " style="margin-right: 6px"></span>悦为优势
         </div>
 
-        <div class=" navbotton" onclick="jump('process')"style="border-right: 1px solid #eaeaea">
+        <div class=" navbotton text-nowrap" onclick="jump('process')"style="border-right: 1px solid #eaeaea">
             <span style="margin-right: 6px" class="glyphicon glyphicon-send"></span>合作流程
         </div>
         <div class=" navbotton" style="width: 10%" onclick="tagger('process')">
@@ -296,11 +279,13 @@
     </div>
 </div>
 <!-- //bootstrap-pop-up -->
+
+
 <!-- about -->
 <div class="inner_main_agile_section" style="margin-top: 5%">
     <div class="container" style="text-align: center">
-        <p style="color: #212125;font-size: 2rem">品牌客户</p>
-        <p class="sub_para_agile two" style="font-size: 2rem">Our clients</p>
+        <p style="color: #212125;font-size: 2rem" class="clients">品牌客户</p>
+        <p class="sub_para_agile two Our" style="font-size: 2rem">Our clients</p>
 
         <!--tab切换-->
         <ul class="tablist" id="myTab">
@@ -314,15 +299,14 @@
 
     </div>
 </div>
-
 <!--品牌客户-->
-<div class="medile_agile_its_section">
+<div id="customers" class="medile_agile_its_section">
     <div class="col-md-3 medile_agile_its_blue">
-        <h4>Request a Free Consultation <i class="fa fa-hand-o-right" aria-hidden="true"></i></h4>
+        <h4 class="Our">Our clients <i class="fa fa-hand-o-right" aria-hidden="true"></i></h4>
     </div>
-    <div class="tab-content">
+    <div class="tab-content col-md-9">
         <!--服饰-->
-        <div id="home" class="tab-pane col-md-9">
+        <div id="home" class="tab-pane ">
             <ul id="flexiselDemo1">
                 <li>
                     <div class="w3layouts_event_grid" >
@@ -405,13 +389,334 @@
         </div>
 
         <!-- 食品酒水-->
-        <div class="tab-pane" id="profile">介绍内容...</div>
+        <div class="tab-pane " id="profile">
+            <ul id="food">
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/nanjiren.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">南极人-天猫双11订单王</a></h5>
+                            <p> 2012双11单日订单65万笔，连续2年
+                                蝉联订单王
+                                - 2018年双11当日南极人品牌销售11亿
+                                - 全网Top5品牌
+                                - 2019年6月16日全网销售100亿</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">古今-国营内衣品牌</a>
+                            </h5>
+                            <p>
+                                古今天猫、 古今唯品会
+                                - 魅力惠古今店、古今贝贝网
+                                - 古今苏宁易购、古今百联
+                                - 古今微信+微商城
+                                - 从单一天猫店拓展到10个渠道以上，
+                                渠道年销售额2亿+</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-2.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">拉夏贝儿-香港上市企业</a>
+                            </h5>
+                            <p> 开业首月3周，破320万元
+                                - 2015年单场品牌团销售突破2600万，
+                                聚划算服饰品牌团第一
+                                - 第一年合作销售2亿元
+                                - 双11单日销售1亿+
+                                - 新零售零库存</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-3.jpg" alt=" " class="img-responsive"/>
+
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">LF-韩国LG旗下</a></h5>
+                            <p>- 韩国LG集团下服饰品牌
+                                - 1000多款SKU，每周上新50款
+                                - 30天内打造出一个爆款</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" style="min-height: 300px">
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/6.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">Strategy</a></h5>
+                            <p>viverra ipsum ac, convallis mauris. Sed quis congue turpis, cursus rhoncus nibh.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <!--  美妆-->
-        <div class="tab-pane" id="messages">.消息内容..</div>
+        <div class="tab-pane " id="messages">
+            <ul id="makeup">
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/nanjiren.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">南极人-天猫双11订单王</a></h5>
+                            <p> 2012双11单日订单65万笔，连续2年
+                                蝉联订单王
+                                - 2018年双11当日南极人品牌销售11亿
+                                - 全网Top5品牌
+                                - 2019年6月16日全网销售100亿</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">古今-国营内衣品牌</a>
+                            </h5>
+                            <p>
+                                古今天猫、 古今唯品会
+                                - 魅力惠古今店、古今贝贝网
+                                - 古今苏宁易购、古今百联
+                                - 古今微信+微商城
+                                - 从单一天猫店拓展到10个渠道以上，
+                                渠道年销售额2亿+</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-2.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">拉夏贝儿-香港上市企业</a>
+                            </h5>
+                            <p> 开业首月3周，破320万元
+                                - 2015年单场品牌团销售突破2600万，
+                                聚划算服饰品牌团第一
+                                - 第一年合作销售2亿元
+                                - 双11单日销售1亿+
+                                - 新零售零库存</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-3.jpg" alt=" " class="img-responsive"/>
+
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">LF-韩国LG旗下</a></h5>
+                            <p>- 韩国LG集团下服饰品牌
+                                - 1000多款SKU，每周上新50款
+                                - 30天内打造出一个爆款</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" style="min-height: 300px">
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/6.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">Strategy</a></h5>
+                            <p>viverra ipsum ac, convallis mauris. Sed quis congue turpis, cursus rhoncus nibh.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <!--        母婴玩具-->
-        <div class="tab-pane" id="settings">.设置内容..</div>
-        <!--        家居-->
-        <div class="tab-pane" id="household">.家居内容..</div>
+        <div class="tab-pane " id="settings">
+            <ul id="infant">
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/nanjiren.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">南极人-天猫双11订单王</a></h5>
+                            <p> 2012双11单日订单65万笔，连续2年
+                                蝉联订单王
+                                - 2018年双11当日南极人品牌销售11亿
+                                - 全网Top5品牌
+                                - 2019年6月16日全网销售100亿</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">古今-国营内衣品牌</a>
+                            </h5>
+                            <p>
+                                古今天猫、 古今唯品会
+                                - 魅力惠古今店、古今贝贝网
+                                - 古今苏宁易购、古今百联
+                                - 古今微信+微商城
+                                - 从单一天猫店拓展到10个渠道以上，
+                                渠道年销售额2亿+</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-2.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">拉夏贝儿-香港上市企业</a>
+                            </h5>
+                            <p> 开业首月3周，破320万元
+                                - 2015年单场品牌团销售突破2600万，
+                                聚划算服饰品牌团第一
+                                - 第一年合作销售2亿元
+                                - 双11单日销售1亿+
+                                - 新零售零库存</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-3.jpg" alt=" " class="img-responsive"/>
+
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">LF-韩国LG旗下</a></h5>
+                            <p>- 韩国LG集团下服饰品牌
+                                - 1000多款SKU，每周上新50款
+                                - 30天内打造出一个爆款</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" style="min-height: 300px">
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/6.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">Strategy</a></h5>
+                            <p>viverra ipsum ac, convallis mauris. Sed quis congue turpis, cursus rhoncus nibh.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--家居-->
+        <div class="tab-pane " id="household">
+            <ul id="households">
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/nanjiren.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">南极人-天猫双11订单王</a></h5>
+                            <p> 2012双11单日订单65万笔，连续2年
+                                蝉联订单王
+                                - 2018年双11当日南极人品牌销售11亿
+                                - 全网Top5品牌
+                                - 2019年6月16日全网销售100亿</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">古今-国营内衣品牌</a>
+                            </h5>
+                            <p>
+                                古今天猫、 古今唯品会
+                                - 魅力惠古今店、古今贝贝网
+                                - 古今苏宁易购、古今百联
+                                - 古今微信+微商城
+                                - 从单一天猫店拓展到10个渠道以上，
+                                渠道年销售额2亿+</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-2.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal"
+                                   style="color:#224e6b">拉夏贝儿-香港上市企业</a>
+                            </h5>
+                            <p> 开业首月3周，破320万元
+                                - 2015年单场品牌团销售突破2600万，
+                                聚划算服饰品牌团第一
+                                - 第一年合作销售2亿元
+                                - 双11单日销售1亿+
+                                - 新零售零库存</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" >
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/index/319-180-3.jpg" alt=" " class="img-responsive"/>
+
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">LF-韩国LG旗下</a></h5>
+                            <p>- 韩国LG集团下服饰品牌
+                                - 1000多款SKU，每周上新50款
+                                - 30天内打造出一个爆款</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts_event_grid" style="min-height: 300px">
+                        <div class="w3_agile_event_grid1">
+                            <img src="images/6.jpg" alt=" " class="img-responsive"/>
+                        </div>
+                        <div class="agileits_w3layouts_event_grid1">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">Strategy</a></h5>
+                            <p>viverra ipsum ac, convallis mauris. Sed quis congue turpis, cursus rhoncus nibh.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
@@ -421,8 +726,8 @@
 
 <div class="inner_main_agile_section" style="margin-top: 5%">
     <div class="container" style="text-align: center">
-        <p style="font-size: 2rem;color: #212125">主营业务</p>
-        <p class="sub_para_agile two" style="font-size: 2rem">Our business</p>
+        <p style="font-size: 2rem;color: #212125"  class="clients">主营业务</p>
+        <p class="sub_para_agile two Our" style="font-size: 2rem">Our business</p>
         <ul class="tablist" id="myTabs">
             <li><span href="#homes">整店代运营服务</span></li>
             <li class="selected"><span href="#profiles">整合营销服务</span></li>
@@ -430,40 +735,39 @@
     </div>
 </div>
 <!--主营业务-->
-<div class="medile_agile_its_section container" style="text-align: center;">
+<div id="business" class="medile_agile_its_section container" style="text-align: center;">
 
     <div>
         <div class="tab-content">
             <div class="tab-pane active" id="homes">
                 <ul id="flexiselDemo2">
-                    <li>
-                        <div class="w3layouts_event_grid">
-                            <div class="w3_agile_event_grid1">
+                    <li >
+<!--                        <div class="w3layouts_event_grid">-->
+<!--                            <div class="w3_agile_event_grid1" style="width: 80%;max-height: 500px">-->
                                 <img src="images/index/1_03.jpg" alt=" " class="img-responsive"/>
-                            </div>
-                        </div>
+<!--                            </div>-->
+<!--                        </div>-->
                     </li>
-                    <li style="width: 25%">
-                        <div class="w3layouts_event_grid">
-                            <div class="w3_agile_event_grid1">
+                    <li>
+<!--                        <div class="w3layouts_event_grid">-->
+<!--                            <div class="w3_agile_event_grid1" style="width: 80%;max-height: 500px">-->
                                 <img style="width: 100%" src="images/index/2_03.jpg" alt=" " class="img-responsive"/>
-                            </div>
-                        </div>
+<!--                            </div>-->
+<!--                        </div>-->
                     </li>
                     <li>
-                        <div class="w3layouts_event_grid">
-                            <div class="w3_agile_event_grid1">
+<!--                        <div class="w3layouts_event_grid">-->
+<!--                            <div class="w3_agile_event_grid1" style="width: 80%;max-height: 500px">-->
                                 <img src="images/index/3_03.jpg" alt=" " class="img-responsive"/>
-                            </div>
-                        </div>
+<!--                            </div>-->
+<!--                        </div>-->
                     </li>
                     <li>
-                        <div class="w3layouts_event_grid">
-                            <div class="w3_agile_event_grid1">
-                                <img src="images/index/4_03.jpg" alt=" " class="img-responsive"/>
-
-                            </div>
-                        </div>
+<!--                        <div class="w3layouts_event_grid">-->
+<!--                            <div class="w3_agile_event_grid1" style="width: 80%;max-height: 500px">-->
+                                <img src="images/index/3_03.jpg" alt=" " class="img-responsive"/>
+<!--                            </div>-->
+<!--                        </div>-->
                     </li>
                 </ul>
             </div>
@@ -479,10 +783,10 @@
 
 
 <!--悦为优势-->
-<div class="inner_main_agile_section" style="margin-top: 5%">
+<div id="advantage" class="inner_main_agile_section" style="margin-top: 5%">
     <div class="container" style="text-align: center">
-        <p style="font-size: 2rem;color: #212125">悦为优势</p>
-        <p class="sub_para_agile two" style="font-size: 2rem">Our advantages</p>
+        <p style="font-size: 2rem;color: #212125"  class="clients">悦为优势</p>
+        <p class="sub_para_agile two Our" style="font-size: 2rem">Our advantages</p>
     </div>
 </div>
 
@@ -577,7 +881,8 @@
 </div>
 
 
-<div style="width: 100%">
+<!--合作流程-->
+<div id="process" style="width: 100%">
     <img style="width: 100%" src="images/index/1920-552.jpg">
 </div>
 
@@ -585,8 +890,8 @@
 <!-- 实时资讯 -->
 <div class="services" id="services" style="background: url('./images/index/1920-761.jpg')">
     <div class="container">
-        <h3 class="w3l_header w3_agileits_header two">实时资讯</h3>
-        <h3 class="w3l_header w3_agileits_header two">Information</h3>
+        <h3 class="w3l_header w3_agileits_header two clients"  >实时资讯</h3>
+        <h3 class="w3l_header w3_agileits_header two Our">Information</h3>
 
         <div class="agile_inner_grids">
             <!-- choose icon -->
@@ -606,22 +911,13 @@
             </div>
 
             <!-- choose icon -->
-            <div class="col-md-5 col-md-offset-1" style="padding: 0">
-                <p style="background-color:#318cb8;color: #ffffff;padding: 3% ">
+            <div id="information" class="col-md-5 col-md-offset-1" style="padding: 0">
+                <p class="informationselect" style="background-color:#ffffff;padding: 3% ">
                     12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>
                 <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">
                     12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>
                 <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">
                     12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>
-                <!--                <div class="choose_left">-->
-                <!--                    <i class="fa fa-bullhorn" aria-hidden="true"></i>-->
-                <!--                </div>-->
-                <!--                <div class="choose_right">-->
-                <!--                    <h3>ONLINE CONSULTING</h3>-->
-                <!--                    <p>Lorem Ipsum is simply dummy text of the printing and-->
-                <!--                        typesetting industry.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-                <!--                </div>-->
-
             </div>
 
             <div class="clearfix"></div>
@@ -689,6 +985,15 @@
 <!-- //stats -->
 <script type="text/javascript">
     $(function () {
+        $('.navbotton').mousemove(function () {
+            $(this).addClass('bagStyle').siblings().removeClass('bagStyle')
+        })
+
+        $('#information p').mousemove(function () {
+            $(this).addClass('informationselect').siblings().removeClass('informationselect')
+
+        })
+
 
         // $(window).scroll(function(){
         //     let N=$(document).scrollTop()
@@ -711,6 +1016,19 @@
         //     }, 1000);
         // })
     })
+    function jump(val) {
+        //点击类目页面滚动到指定位置
+        /**
+         *  customers 品牌客户
+         business主营业务
+         advantage悦为优势
+         process合作流程
+         *
+         */
+        let x = $(`#${val}`).offset().top;
+        $("html,body").animate({scrollTop: x - "260" + "px"}, x);
+
+    }
 </script>
 <!-- flexisel -->
 <script type="text/javascript" src="js/jquery.flexisel.js"></script>

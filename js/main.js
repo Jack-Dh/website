@@ -13,6 +13,7 @@ $(function () {
         pagination: true,
     });
     $(window).load(function () {
+        //服饰
         $("#flexiselDemo1").flexisel({
             visibleItems: 4,
             animationSpeed: 1000,
@@ -35,6 +36,107 @@ $(function () {
                 }
             }
         });
+
+        // 食品酒水
+        $("#food").flexisel({
+            visibleItems: 4,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 667,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 800,
+                    visibleItems: 3
+                }
+            }
+        });
+
+        //美妆
+        $("#makeup").flexisel({
+            visibleItems: 4,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 667,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 800,
+                    visibleItems: 3
+                }
+            }
+        });
+
+        //母婴
+        $("#infant").flexisel({
+            visibleItems: 4,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 667,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 800,
+                    visibleItems: 3
+                }
+            }
+        });
+
+        //家居
+        $("#households").flexisel({
+            visibleItems: 4,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 667,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 800,
+                    visibleItems: 3
+                }
+            }
+        });
+
+
+
+
+        // 主营业务
         $("#flexiselDemo2").flexisel({
             visibleItems: 4,
             animationSpeed: 1000,
@@ -60,17 +162,16 @@ $(function () {
 
     });
 
-    $(window).scroll(function(){
-        let N=$(document).scrollTop()
-        if (N>0){
+    $(window).scroll(function () {
+        let N = $(document).scrollTop()
+        if (N > 0) {
             $('#navstyle').addClass('addClssBag')
-        } else if (N==0){
+        } else if (N == 0) {
             $('#navstyle').removeClass('addClssBag')
         }
         //do something...
 
     });
-
 
 
     $("#bars li .bar").each(function (key, bar) {
@@ -110,6 +211,7 @@ function tagger() {
 
     // taggerhide
 }
+
 function taggerinput() {
     $('#FloatingButton').show()
     $('#Floatinginput').hide()

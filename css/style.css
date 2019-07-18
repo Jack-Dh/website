@@ -932,7 +932,7 @@ h3.w3l_header.w3_agileits_header.two {
 }
 
 .agileits_w3layouts_event_grid1:hover {
-    background: #00ba66;
+    background: #2e6da4;
 }
 
 .agileits_w3layouts_event_grid1 h5 {
@@ -941,9 +941,9 @@ h3.w3l_header.w3_agileits_header.two {
 
 .agileits_w3layouts_event_grid1 h5 a {
     font-size: 1.4em;
-    color: #212121;
+    color: #2e6da4;
     text-transform: uppercase;
-    font-weight: 700;
+    /*font-weight: 700;*/
     letter-spacing: 4px;
     text-decoration: none;
 }
@@ -5709,6 +5709,29 @@ h3.agileinfo_sign {
     /*background-size: 100% 100%;*/
     text-align: center;
 }
+/*悦为优势*/
+.Customertage{
+    background: url("../images/channels/Customer/客户服务_06.png");
+    padding: 10%;
+    /*background-size: 100% 100%;*/
+    text-align: center;
+}
+
+/*品牌策划优势*/
+.planningladvantage{
+    background: url("../images/channels/planning/品牌策划_07.png");
+    padding: 10%;
+    /*background-size: 100% 100%;*/
+    text-align: center;
+}
 .market:hover{
     background-color: #224e6b!important;
+}
+
+.CustomerCase{
+    background-color: #224e6b;
+    color: #ffffff!important;
+    padding:2%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #aabbc6;
 }

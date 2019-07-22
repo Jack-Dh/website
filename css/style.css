@@ -5403,15 +5403,16 @@ h3.agileinfo_sign {
     src: url('../fonts/SourceHanSansCN-Regular.woff.ttf')
 }
 
-@font-face {
-    font-family: STHeitiSCMedium;
-    src: url('../fonts/STHeitiSCMedium.ttf')
-}
+/*@font-face {*/
+/*    font-family: STHeitiSCMedium;*/
+/*    src: url('../fonts/STHeitiSCMedium.ttf')*/
+/*}*/
 
 @font-face {
     font-family: Playfair;
     src: url("../fonts/Playfair Display.ttf");
 }
+
 @font-face {
     font-family: SourceHanSansCN-Bold;
     src: url("../fonts/SourceHanSansCN-Bold.ttf");
@@ -5513,14 +5514,14 @@ h3.agileinfo_sign {
 }
 
 .bagJoin {
-    background: url("../images/Join/加入我们_06.png");
+    background: url("../images/Join/06.png");
     padding: 10%;
     width: 100%;
 
 }
 
 .bagJoins {
-    background: url("../images/Join/加入我们_07.png");
+    background: url("../images/Join/07.png");
     padding: 6%;
     width: 100%;
     text-align: center;
@@ -5565,7 +5566,7 @@ h3.agileinfo_sign {
 
 .successcase {
     width: 100%;
-    background: url("../images/case/经典案例_05.png");
+    background: url("../images/case/05.png");
     min-height: 600px;
     max-height: 1000px;
     position: relative;
@@ -5626,18 +5627,20 @@ h3.agileinfo_sign {
     padding: 10%;
     min-height: 300px;
     text-align: center;
-    background: url("../images/Aboutus/关于我们_07.png");
+    background: url("../images/Aboutus/07.png");
     background-size: 100% 100%;
 }
+
 /*悦为实力*/
 .power {
     width: 100%;
     padding: 10%;
     min-height: 300px;
     text-align: center;
-    background: url("../images/channels/跨境业务_06.png");
+    background: url("../images/channels/06.png");
     background-size: 100% 100%;
 }
+
 .Culture div {
     margin-top: 10%;
     color: #ffffff;
@@ -5672,66 +5675,82 @@ h3.agileinfo_sign {
 
 
 .bandImg {
-    width: 100%!important;
+    width: 100% !important;
     /*border: 1px solid;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.bandImg img{
+
+.bandImg img {
     max-width: 15%;
     height: auto;
 
-              /* 支持CSS3的浏览器（FF 1.5也支持）*/
+    /* 支持CSS3的浏览器（FF 1.5也支持）*/
 
 }
-.mouver{
-    filter:alpha(opacity=30);  /* IE 浏览器支持 */ ;
-    -moz-opacity:0.3;          /* 遨游浏览器 火狐浏览器 支持 */ ;
-    opacity: 0.3;              /* 支持CSS3的浏览器（FF 1.5也支持）*/
+
+.mouver {
+    filter: alpha(opacity=30); /* IE 浏览器支持 */;
+    -moz-opacity: 0.3; /* 遨游浏览器 火狐浏览器 支持 */;
+    opacity: 0.3; /* 支持CSS3的浏览器（FF 1.5也支持）*/
 }
-.Pointsing{
+
+.Pointsing {
 
     /*height: 260px;*/
     background-color: #224e6b;
 }
 
-.dataservices{
-    background: url("../images/channels/dataServices/数据服务_05.png");
+.dataservices {
+    background: url("../images/channels/dataServices/05.png");
     padding: 10%;
     /*background-size: 100% 100%;*/
     text-align: center;
 }
+
 /*视觉优势*/
-.visualadvantage{
-    background: url("../images/channels/visual/品牌视觉_06.png");
+.visualadvantage {
+    background: url("../images/channels/visual/06.png");
     padding: 10%;
     /*background-size: 100% 100%;*/
     text-align: center;
 }
+
 /*悦为优势*/
-.Customertage{
-    background: url("../images/channels/Customer/客户服务_06.png");
+.Customertage {
+    background: url("../images/channels/Customer/06.png");
+    padding: 10%;
+    /*background-size: 100% 100%;*/
+    text-align: center;
+}
+
+/*
+私域悦为优势
+*/
+.privateDomain {
+    background: url("../images/integration/domain/siyu06_02.png") no-repeat;
     padding: 10%;
     /*background-size: 100% 100%;*/
     text-align: center;
 }
 
 /*品牌策划优势*/
-.planningladvantage{
-    background: url("../images/channels/planning/品牌策划_07.png");
+.planningladvantage {
+    background: url("../images/channels/planning/07.png");
     padding: 10%;
     /*background-size: 100% 100%;*/
     text-align: center;
 }
-.market:hover{
-    background-color: #224e6b!important;
+
+.market:hover {
+    background-color: #224e6b !important;
 }
 
-.CustomerCase{
+.CustomerCase {
     background-color: #224e6b;
-    color: #ffffff!important;
-    padding:2%;
+    color: #ffffff !important;
+    padding: 2%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #aabbc6;
 }

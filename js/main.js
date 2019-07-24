@@ -110,7 +110,7 @@ $(function () {
         });
 
         //家居
-        $("#households").flexisel({
+        $("#household").flexisel({
             visibleItems: 4,
             animationSpeed: 1000,
             autoPlay: true,
@@ -138,6 +138,29 @@ $(function () {
 
         // 主营业务
         $("#flexiselDemo2").flexisel({
+            visibleItems: 4,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 667,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 800,
+                    visibleItems: 3
+                }
+            }
+        });
+
+        $("#servicesing").flexisel({
             visibleItems: 4,
             animationSpeed: 1000,
             autoPlay: true,

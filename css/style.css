@@ -5556,12 +5556,12 @@ h3.agileinfo_sign {
 }
 
 .brand_highlights div {
-    width: 60%;
+    width: 100%;
 
 }
 
 .brand_highlights div img {
-    width: 100%;
+    max-width: 60%;
 }
 
 .successcase {
@@ -5676,11 +5676,15 @@ h3.agileinfo_sign {
 
 .bandImg {
     width: 100% !important;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     /*border: 1px solid;*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 }
+
 
 .bandImg img {
     max-width: 15%;
@@ -5694,6 +5698,7 @@ h3.agileinfo_sign {
     filter: alpha(opacity=30); /* IE 浏览器支持 */;
     -moz-opacity: 0.3; /* 遨游浏览器 火狐浏览器 支持 */;
     opacity: 0.3; /* 支持CSS3的浏览器（FF 1.5也支持）*/
+
 }
 
 .Pointsing {
@@ -5754,3 +5759,12 @@ h3.agileinfo_sign {
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px #aabbc6;
 }
+#pingyi{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    transform: translateX(60%);
+}
+/*.band{*/
+/*    display: none;*/
+/*}*/

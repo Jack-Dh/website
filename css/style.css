@@ -3809,12 +3809,12 @@ h3.agileinfo_sign {
     }
 
     .navbar-nav .open .dropdown-menu {
-        background-color: #224e6b;
+        /*background-color: #224e6b;*/
         padding: 10px 0;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #fff;
+        /*color: #fff;*/
     }
 
     .w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
@@ -5418,6 +5418,11 @@ h3.agileinfo_sign {
     src: url("../fonts/SourceHanSansCN-Bold.ttf");
 }
 
+@font-face {
+    font-family: bahnschrift;
+    src: url('../fonts/bahnschrift.ttf')
+}
+
 .clients {
     font-family: myfont;
     font-weight: bold;
@@ -5739,7 +5744,15 @@ h3.agileinfo_sign {
     /*background-size: 100% 100%;*/
     text-align: center;
 }
-
+/*
+内容运营悦为优势
+*/
+.contentDomain {
+    background: url("../images/integration/content/05.png") no-repeat;
+    padding: 10%;
+    /*background-size: 100% 100%;*/
+    text-align: center;
+}
 /*品牌策划优势*/
 .planningladvantage {
     background: url("../images/channels/planning/07.png");

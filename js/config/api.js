@@ -4,8 +4,17 @@ window.globaCponfig={
     indexbanner:`${ApiRoot}home/list`, //首页轮播
     caseList:`${ApiRoot}case/list`, //经典案例接
     aboutyuewei:`${ApiRoot}about/list`, //关于悦为
-    join:`${ApiRoot}join/list` //关于悦为
+    join:`${ApiRoot}join/list`, //关于悦为,
 
-
+    /**
+     * 全渠道代运营
+     * */
+    crossBorder:`${ApiRoot}cross/list`,
+    dataList:`${ApiRoot}data/list`,//数据服务
+    depositlist:`${ApiRoot}deposit/list`,//整店托管代运营
+    visionlist:`${ApiRoot}vision/list`,//品牌视觉
+    planlist:`${ApiRoot}plan/list`,//品牌策划
+    customerlist:`${ApiRoot}customer/list`,//客服服务
+    logisticslist:`${ApiRoot}logistics/list`,//仓储物流
 }
 

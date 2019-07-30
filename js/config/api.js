@@ -16,5 +16,17 @@ window.globaCponfig={
     planlist:`${ApiRoot}plan/list`,//品牌策划
     customerlist:`${ApiRoot}customer/list`,//客服服务
     logisticslist:`${ApiRoot}logistics/list`,//仓储物流
+
+
+    /**
+     * 整合营销
+     * */
+    gloabllist:`${ApiRoot}gloabl/list`,//全域运营
+    contentlist:`${ApiRoot}content/list`,//内容运营
+    privatelist:`${ApiRoot}private/list`,//私域运营
+    broadcastlist:`${ApiRoot}broadcast/list`,//直播代运营
+    microlist:`${ApiRoot}micro/list`,//双微代运营
+    explosivelist:`${ApiRoot}explosive/list`,//爆款计划
+    videolist:`${ApiRoot}video/list`,//视频摄影
 }
 

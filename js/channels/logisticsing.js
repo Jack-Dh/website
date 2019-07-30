@@ -69,14 +69,42 @@ function bangQuery() {
             })
 
 
+            //管理对接
+            let dockeListtitle=
+                `      <div id="dockeListtitle" class="col-md-6" style="padding-left: 6%;margin-top: 80px;font-family: myfont;line-height: 2rem;">
+            <p>
+            <h3 style="margin-bottom: 5%;font-family: SourceHanSansCN;font-size: 2.25rem;color: #2e6da4;font-weight: 350">
+                ${res.data.dockeList.title}</h3></p>
+            <div style="font-size: 0.25rem;font-family: myfont;font-weight: bold">
+                ${res.data.dockeList.content }
+            </div>
+        </div>`
+            $('#dockeListtitle').append(dockeListtitle)
+
+
+            res.data.dockeList.imageList.forEach(item=>{
+                let flexiselDemo2=`   <li>
+                <img style="max-width: 100%" src=${item} alt=" "
+                    class="img-responsive"/>-->
+            </li>`
+                $('#flexiselDemo2').append(flexiselDemo2)
+            })
+
+
+
+
+
+
+
+
 
 
             //服务案例
             res.data.caseList.forEach(item=>{
                 let dom=`
-                    <div class="col-md-3">
-        <img style="max-width: 100%" src=${item.picUrl}>
-    </div>
+                 <div class="col-md-3">
+                         <img style="max-width: 100%" src=${item.picUrl}>
+                 </div>
                 `
                 $('#case').append(dom)
             })

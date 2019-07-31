@@ -19,6 +19,7 @@
     <!-- //font-awesome-icons -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900"
           rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,8 +37,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!--                <a style=" padding-left: 10px; line-height: 50px;" class="navbar-brand" href="#"><h1>悦为电商</h1></a>-->
-                <a style=" padding-left: 10px; line-height: 50px;" class="navbar-brand" href="#">
-                    <img style="width: 60px; background-color: transparent;" src="./images/index/logo.png"></a>
+                <a  class="navbar-brand" href="#">
+                    <img style="width: 60px;margin-top:-7px;" src="./images/index/logo.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -473,29 +474,29 @@
 
             <div class="agile_inner_grids">
                 <!-- choose icon -->
-                <div class="col-md-6 choose_icon row" style="background: #ffffff;padding: 0">
-                    <div class="col-md-6" style="padding: 0;">
+                <div id="news" class="col-md-6 choose_icon row" style="background: #ffffff;padding: 0">
+<!--                    <div class="col-md-6" style="padding: 0;">-->
 
-                        <img style="width: 100%" class="fa fa-bar-chart" src="images/index/272-194-22.jpg">
-                    </div>
-                    <div class=" col-md-6">
+<!--                        <img style="width: 100%" class="fa fa-bar-chart" src="images/index/272-194-22.jpg">-->
+<!--                    </div>-->
+<!--                    <div class=" col-md-6">-->
 
-                        <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                        <p style="color: #8f8f8e">
-                            悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣</p>
+<!--                        <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>-->
+<!--                        <p style="color: #8f8f8e">-->
+<!--                            悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣</p>-->
 
-                    </div>
+<!--                    </div>-->
                     <div class="clearfix"></div>
                 </div>
 
                 <!-- choose icon -->
                 <div id="information" class="col-md-5 col-md-offset-1" style="padding: 0">
-                    <p class="informationselect" style="background-color:#ffffff;padding: 3% ">
-                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>
-                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">
-                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>
-                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">
-                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>
+<!--                    <p class="informationselect" style="background-color:#ffffff;padding: 3% ">-->
+<!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
+<!--                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">-->
+<!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
+<!--                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">-->
+<!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
                 </div>
 
                 <div class="clearfix"></div>
@@ -547,6 +548,7 @@
     <!-- start-smoth-scrolling -->
     <!-- js -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <!-- //js -->
     <script src="js/JiSlider.js"></script>
 
@@ -557,54 +559,7 @@
         // $('.counter').countUp();
     </script>
     <!-- //stats -->
-    <script type="text/javascript">
-        $(function () {
-            $('.navbotton').mousemove(function () {
-                $(this).addClass('bagStyle').siblings().removeClass('bagStyle')
-            })
 
-            $('#information p').mousemove(function () {
-                $(this).addClass('informationselect').siblings().removeClass('informationselect')
-
-            })
-
-
-            // $(window).scroll(function(){
-            //     let N=$(document).scrollTop()
-            //     if (N>0){
-            //         $('#navstyle').addClass('addClssBag')
-            //     } else if (N==0){
-            //         $('#navstyle').removeClass('addClssBag')
-            //     }
-            //     //do something...
-            //
-            // });
-            //
-            //
-            //
-            // $("#bars li .bar").each(function (key, bar) {
-            //     var percentage = $(this).data('percentage');
-            //
-            //     $(this).animate({
-            //         'height': percentage + '%'
-            //     }, 1000);
-            // })
-        })
-
-        function jump(val) {
-            //点击类目页面滚动到指定位置
-            /**
-             *  customers 品牌客户
-             business主营业务
-             advantage悦为优势
-             process合作流程
-             *
-             */
-            let x = $(`#${val}`).offset().top;
-            $("html,body").animate({scrollTop: x - "260" + "px"}, x);
-
-        }
-    </script>
     <!-- flexisel -->
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <script type="text/javascript">
@@ -711,7 +666,76 @@
     <!--    console.log(myName);-->
     <!--</script>-->
     <script src="./js/index/index.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.navbotton').mousemove(function () {
+                $(this).addClass('bagStyle').siblings().removeClass('bagStyle')
+            })
 
+            // $('#information p').mousemove(function () {
+            //     $(this).addClass('informationselect').siblings().removeClass('informationselect')
+            //
+            // })
+
+            // $('#information').on('mousemove','p',function () {
+            //     $(this).addClass('informationselect').siblings().removeClass('informationselect')
+            //     let newsindex=$(this).attr('newid')
+            //     let data=JSON.parse($.cookie('newslist'))
+            //     console.log(data)
+            //     let newsdom=` <div class="col-md-6" style="padding: 0;">
+            //
+            //             <img style="width: 100%" class="fa fa-bar-chart" src=${data[newsindex].picUrl}>
+            //         </div>
+            //         <div class=" col-md-6">
+            //
+            //             <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">${data[newsindex].title}</h3>
+            //                <div style="color: #8f8f8e;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical">
+            //             ${data[newsindex].content}</div>
+            //               <p style="color: #2e6da4;margin-top: 10%" class="text-left"><a href="nesdeltet.html?id=${data[newsindex].id}"  target="_blank">查看详情</a></p>
+            //
+            //         </div>`
+            //     $('#news').children().remove()
+            //     $('#news').append(newsdom)
+            // })
+
+
+
+            // $(window).scroll(function(){
+            //     let N=$(document).scrollTop()
+            //     if (N>0){
+            //         $('#navstyle').addClass('addClssBag')
+            //     } else if (N==0){
+            //         $('#navstyle').removeClass('addClssBag')
+            //     }
+            //     //do something...
+            //
+            // });
+            //
+            //
+            //
+            // $("#bars li .bar").each(function (key, bar) {
+            //     var percentage = $(this).data('percentage');
+            //
+            //     $(this).animate({
+            //         'height': percentage + '%'
+            //     }, 1000);
+            // })
+        })
+
+        function jump(val) {
+            //点击类目页面滚动到指定位置
+            /**
+             *  customers 品牌客户
+             business主营业务
+             advantage悦为优势
+             process合作流程
+             *
+             */
+            let x = $(`#${val}`).offset().top;
+            $("html,body").animate({scrollTop: x - "260" + "px"}, x);
+
+        }
+    </script>
     <!-- //here ends scrolling icon -->
 </div>
 </body>

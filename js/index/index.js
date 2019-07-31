@@ -1,9 +1,45 @@
+let data
 $(function () {
 
     bangQuery()
     $('.yewu').click(function () {
         $(this).addClass('selected').siblings().removeClass('selected')
     })
+
+
+
+
+    /**
+     * 实时资讯鼠标滚动事件
+     * */
+    $('#information').on('mousemove','p',function () {
+        $(this).addClass('informationselect').siblings().removeClass('informationselect')
+        let newsindex=$(this).attr('newid')
+        // let data=JSON.parse($.cookie('newslist'))
+        console.log(data)
+        console.log(data[newsindex])
+        let newsdom=` <div class="col-md-6" style="padding: 0;">
+
+                <img style="width: 100%" class="fa fa-bar-chart" src=${data[newsindex].picUrl}>
+            </div>
+            <div class=" col-md-6">
+
+                <h4 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">${data[newsindex].title}</h4>
+                   <div style="color: #8f8f8e;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical">
+                ${data[newsindex].content.replace(/<[^>]+>/g, "")}</div>
+                  <p style="color: #2e6da4;margin-top: 10%" class="text-left"><a href="nesdeltet.html?id=${data[newsindex].id}"  target="_blank">查看详情</a></p>
+
+            </div>`
+        $('#news').children().remove()
+        $('#news').append(newsdom)
+    })
+
+
+
+
+
+
+
 })
 
 function category(val) {
@@ -184,8 +220,44 @@ function bangQuery() {
                     `
                 $('#youshitwo').append(dom)
             })
+
+
+            //实时资讯information
+
+            let arrs=res.data.newsList.splice(0,3)
+            data=arrs
+
+            let arrsStr=JSON.stringify(arrs)
+            console.log(data)
+            window.location.href
+            $.cookie('newslist', arrs, {path: '/'});//储存到cookie中
+
+            arrs.forEach((item,index)=>{
+                let dom=` <p newid=${index} style="background-color:#ffffff;padding: 3%;margin-bottom: 4%">
+                        12/5<span>${item.title}</span></p>`
+                $('#information').append(dom)
+            })
+
+            let newsdom=` <div class="col-md-6" style="padding: 0;">
+
+                        <img style="width: 100%" class="fa fa-bar-chart" src=${arrs[0].picUrl}>
+                    </div>
+                    <div class=" col-md-6">
+
+                        <h4 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">${arrs[0].title}</h4>
+                        <div style="color: #8f8f8e;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical">
+                        ${arrs[0].content.replace(/<[^>]+>/g, "")}
+                       
+                        </div>
+                        <p style="color: #2e6da4;margin-top: 10%" class="text-left"><a href="nesdeltet.html?id=${arrs[0].id}"  target="_blank">查看详情</a></p>
+                    </div>`
+            $('#news').children().remove()
+            $('#news').append(newsdom)
+
+
         }
     })
+
 
 }
 

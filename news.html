@@ -18,6 +18,9 @@
     <!-- //font-awesome-icons -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900"
           rel="stylesheet">
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -35,8 +38,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!--                <a style=" padding-left: 10px; line-height: 50px;" class="navbar-brand" href="#"><h1>悦为电商</h1></a>-->
-                <a style=" padding-left: 10px; line-height: 50px;" class="navbar-brand" href="#">
-                    <img style="width: 60px; background-color: transparent;" src="./images/index/logo.png"></a>
+                <a  class="navbar-brand" href="#">
+                    <img style="width: 60px;margin-top:-7px;" src="./images/index/logo.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -89,12 +92,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">加入我们<b
-                                    class="caret"></b></a>
-                            <ul class="dropdown-menu agile_short_dropdown">
-                                <li><a href="icons.html">悦为理念</a></li>
-                                <li><a href="typography.html">招聘岗位</a></li>
-                            </ul>
+                            <a href="typography.html" class="effect-3">加入我们</a>
                         </li>
                     </ul>
                 </nav>
@@ -108,45 +106,45 @@
 <div class="banner-silder">
     <div id="JiSlider" class="jislider">
         <ul>
-            <li>
-                <div class="w3layouts-banner-top">
+<!--            <li>-->
+<!--                <div class="w3layouts-banner-top">-->
 
-                    <div class="container">
-                        <img src="images/news/02.png">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top1">
-                    <div class="container">
-                        <div class="agileits-banner-info">
+<!--                    <div class="container">-->
+<!--                        <img src="images/news/02.png">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <div class="w3layouts-banner-top w3layouts-banner-top1">-->
+<!--                    <div class="container">-->
+<!--                        <div class="agileits-banner-info">-->
 
-                            <h3>Best Business Support</h3>
-                            <p>Planning Your Dream</p>
-                            <div class="more">
-                                <a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Read
-                                    More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top2">
-                    <div class="container">
-                        <div class="agileits-banner-info">
+<!--                            <h3>Best Business Support</h3>-->
+<!--                            <p>Planning Your Dream</p>-->
+<!--                            <div class="more">-->
+<!--                                <a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Read-->
+<!--                                    More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <div class="w3layouts-banner-top w3layouts-banner-top2">-->
+<!--                    <div class="container">-->
+<!--                        <div class="agileits-banner-info">-->
 
-                            <h3>Business Consultancy </h3>
-                            <p>Grow Your Business.</p>
-                            <div class="more">
-                                <a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Read
-                                    More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+<!--                            <h3>Business Consultancy </h3>-->
+<!--                            <p>Grow Your Business.</p>-->
+<!--                            <div class="more">-->
+<!--                                <a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Read-->
+<!--                                    More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                    </div>
-                </div>
-            </li>
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </li>-->
         </ul>
     </div>
 </div>
@@ -157,384 +155,111 @@
         <div class="container" style="text-align: center">
 
             <!--tab切换-->
-            <ul class="tablist tabliststyle" id="myTab">
-                <li class="active" ><span href="#home">公司新闻</span></li>
-                <li><span href="#profile">电商干货</span></li>
-                <li><span href="#messages">行业动态</span></li>
-                <li><span href="#settings">营销理念</span></li>
-
+            <ul class="tablist tabliststyle" >
+                <li onclick="tagger('公司新闻')">公司新闻</li>
+                <li onclick="tagger('电商干货')">电商干货</li>
+                <li onclick="tagger('行业动态')">行业动态</li>
+                <li onclick="tagger('营销理念')">营销理念</li>
             </ul>
 
 
         </div>
     </div>
-    <div class="tab-content">
+    <div >
         <!--公司新闻-->
-        <div class="tab-pane" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" width: 48%;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
+        <div id="home">
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-9 col-md-offset-3"-->
+<!--                         style=" width: 48%;background: #ffffff;padding: 0;">-->
+<!--                        <div class="col-md-6" style="padding: 0;">-->
+<!--                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"-->
+<!--                                 src="images/index/272-194-22.jpg">-->
+<!--                        </div>-->
+<!--                        <div class=" col-md-6 text-left">-->
+<!--                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>-->
+<!--                            <p style="color: #8f8f8e;margin-bottom: 10px">-->
+<!--                                悦为总经理王梓欣悦为总经理王-->
+<!--                                梓欣悦为总经理王梓欣-->
+<!--                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理-->
+<!--                                欣悦为总经理王梓欣...</p>-->
+<!--                            <span style="color: #2e6da4">查看详情</span>-->
+<!--                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            </div>-->
+<!--            <div class="container" style="margin-top: 1%">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-9 col-md-offset-3"-->
+<!--                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">-->
+<!--                        <div class="col-md-6" style="padding: 0;">-->
+<!--                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"-->
+<!--                                 src="images/index/272-194-22.jpg">-->
+<!--                        </div>-->
+<!--                        <div class=" col-md-6 text-left">-->
+<!--                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>-->
+<!--                            <p style="color: #8f8f8e;margin-bottom: 10px">-->
+<!--                                悦为总经理王梓欣悦为总经理王-->
+<!--                                梓欣悦为总经理王梓欣-->
+<!--                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理-->
+<!--                                欣悦为总经理王梓欣...</p>-->
+<!--                            <span style="color: #2e6da4">查看详情</span>-->
+<!--                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="container" style="margin-top: 1%">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-9 col-md-offset-3"-->
+<!--                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">-->
+<!--                        <div class="col-md-6" style="padding: 0;">-->
+<!--                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"-->
+<!--                                 src="images/index/272-194-22.jpg">-->
+<!--                        </div>-->
+<!--                        <div class=" col-md-6 text-left">-->
+<!--                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>-->
+<!--                            <p style="color: #8f8f8e;margin-bottom: 10px">-->
+<!--                                悦为总经理王梓欣悦为总经理王-->
+<!--                                梓欣悦为总经理王梓欣-->
+<!--                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理-->
+<!--                                欣悦为总经理王梓欣...</p>-->
+<!--                            <span style="color: #2e6da4">查看详情</span>-->
+<!--                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div style="margin-top: 2%">
-                <div class="text-center">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+
+        </div>
+        <div id="pages" style="margin-top: 2%">
+            <div class="text-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination" id="id"></ul>
+                </nav>
             </div>
         </div>
-
-        <!-- 电商干货-->
-        <div class="tab-pane" id="profile">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="margin-top: 2%">
-                <div class="text-center">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!--  行业动态-->
-        <div class="tab-pane" id="messages">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="margin-top: 2%">
-                <div class="text-center">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- 营销理念-->
-        <div class="tab-pane" id="settings">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" style="margin-top: 1%">
-                <div class="row">
-                    <div class="col-md-9 col-md-offset-3"
-                         style=" text-align: center;width: 48%;;background: #ffffff;padding: 0;">
-                        <div class="col-md-6" style="padding: 0;">
-                            <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
-                        </div>
-                        <div class=" col-md-6 text-left">
-                            <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>
-                            <p style="color: #8f8f8e;margin-bottom: 10px">
-                                悦为总经理王梓欣悦为总经理王
-                                梓欣悦为总经理王梓欣
-                                梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理
-                                欣悦为总经理王梓欣...</p>
-                            <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="margin-top: 2%">
-                <div class="text-center">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 
     <div class="clearfix"></div>
 </div>
 
+<!--分页模块-->
+
+<!--<div id="id"></div>-->
+<!--<div style="margin-top: 2%">-->
+<!--    <div class="text-center">-->
+<!--        <nav aria-label="Page navigation">-->
+<!--            <ul class="pagination" id="id">-->
+
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div class="footer">
     <div class="container">
@@ -642,6 +367,10 @@
     });
 </script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="./js/config/api.js"></script>
+<script type="text/javascript" src="./js/news/news.js"></script>
+<script type="text/javascript" src="./js/jqPaginator.js"></script>
+<script type="text/javascript" src="./js/jquery.cookie.js"></script>
 <!-- //here ends scrolling icon -->
 </body>
 </html>

@@ -58,6 +58,9 @@ function bangQuery() {
                 $('#case').append(caseDom)
             })
 
+            //合作流程
+            let fifthListdom = ` <img style="max-width: 100%" src=${res.data.cooperateList[0].picUrl}>`
+            $('#fifthListdom').append(fifthListdom)
         }
     })
 

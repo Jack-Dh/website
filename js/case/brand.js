@@ -47,41 +47,82 @@ function bangQuery(type = 2, category = '服饰') {
              * */
             let length=$('.bandImg').children().length
             if (length===0){
-                res.data.casesList.forEach((item, index) => {
-                    if (index < 4) {
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.one').append(dom)
-                    } else if (index < 8) {
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.two').append(dom)
-                    } else if (index < 12) {
-                        console.log(index)
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.three').append(dom)
-                    } else if (index < 16) {
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.four').append(dom)
-                    }
-
+                let arr=res.data.casesList.splice(0,4)
+                let twoarr=res.data.casesList.splice(0,4)
+                let threearr=res.data.casesList.splice(0,4)
+                let fourtwoarr=res.data.casesList.splice(0,4)
+                arr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.one').append(dom)
                 })
+                twoarr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.two').append(dom)
+                })
+                threearr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.three').append(dom)
+                })
+                fourtwoarr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.four').append(dom)
+                })
+                // res.data.casesList.forEach((item, index) => {
+                //     if (index < 4) {
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.one').append(dom)
+                //     } else if (index < 8) {
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.two').append(dom)
+                //     } else if (index < 12) {
+                //         console.log(index)
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.three').append(dom)
+                //     } else if (index < 16) {
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.four').append(dom)
+                //     }
+                //
+                // })
             } else {
                 $(".bandImg").empty()
-                res.data.casesList.forEach((item, index) => {
-                    if (index < 4) {
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.one').append(dom)
-                    } else if (index < 8) {
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.two').append(dom)
-                    } else if (index < 12) {
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.three').append(dom)
-                    } else if (index < 16) {
-                        let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
-                        $('.four').append(dom)
-                    }
-
+                let arr=res.data.casesList.splice(0,4)
+                let twoarr=res.data.casesList.splice(0,4)
+                let threearr=res.data.casesList.splice(0,4)
+                let fourtwoarr=res.data.casesList.splice(0,4)
+                arr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.one').append(dom)
                 })
+                twoarr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.two').append(dom)
+                })
+                threearr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.three').append(dom)
+                })
+                fourtwoarr.forEach(item=>{
+                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    $('.four').append(dom)
+                })
+                // res.data.casesList.forEach((item, index) => {
+                //     if (index < 4) {
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.one').append(dom)
+                //     } else if (index < 8) {
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.two').append(dom)
+                //     } else if (index < 12) {
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.three').append(dom)
+                //     } else if (index < 16) {
+                //         let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                //         $('.four').append(dom)
+                //     }
+                //
+                // })
+
             }
 
 

@@ -1,5 +1,5 @@
 // const ApiRoot = 'http://192.168.3.200:8087/yw/';
-const ApiRoot = 'http://192.168.3.200:8087/yw/';
+const ApiRoot = 'http://39.100.59.41:8087/yw/';
 window.globaCponfig={
     indexbanner:`${ApiRoot}home/list`, //首页轮播
     caseList:`${ApiRoot}case/list`, //经典案例接

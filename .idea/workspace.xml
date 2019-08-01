@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ea2f641-6286-4fcf-89fd-017ecf2d1db6" name="Default Changelist" comment="完成新闻详情页">
+    <list default="true" id="8ea2f641-6286-4fcf-89fd-017ecf2d1db6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case.html" beforeDir="false" afterPath="$PROJECT_DIR$/case.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/case/brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/case/brand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/cross-border.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/cross-border.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/config/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/config/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/cross-border.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/cross-border.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/integration/micro.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/integration/micro.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -271,8 +262,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4637">
-              <caret line="2855" column="4" lean-forward="true" selection-start-line="2855" selection-start-column="4" selection-end-line="2855" selection-end-column="4" />
+            <state relative-caret-position="115">
+              <caret line="5392" lean-forward="true" selection-start-line="5392" selection-end-line="5392" />
             </state>
           </provider>
         </entry>
@@ -516,7 +507,7 @@
       <workItem from="1564455324371" duration="14947000" />
       <workItem from="1564535159844" duration="25436000" />
       <workItem from="1564570574795" duration="1225000" />
-      <workItem from="1564621443959" duration="6667000" />
+      <workItem from="1564621443959" duration="7514000" />
     </task>
     <task id="LOCAL-00001" summary="官网搭建">
       <created>1562926653880</created>
@@ -574,11 +565,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564569137302</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="样式调整">
+      <created>1564629749896</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564629749896</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322257000" />
+    <option name="totallyTimeSpent" value="323104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -634,7 +632,8 @@
     <MESSAGE value="完成全渠道代运营模块下子模块与服务端交互" />
     <MESSAGE value="完成整合营销模块所有数据对接" />
     <MESSAGE value="完成新闻详情页" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成新闻详情页" />
+    <MESSAGE value="样式调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="样式调整" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/Join/01.png">
@@ -1821,8 +1820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4637">
-          <caret line="2855" column="4" lean-forward="true" selection-start-line="2855" selection-start-column="4" selection-end-line="2855" selection-end-column="4" />
+        <state relative-caret-position="115">
+          <caret line="5392" lean-forward="true" selection-start-line="5392" selection-end-line="5392" />
         </state>
       </provider>
     </entry>

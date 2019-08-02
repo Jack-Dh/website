@@ -18,18 +18,22 @@ function bangQuery() {
             console.log(res)
 
             // 轮播
-            res.data.BannerList.forEach(item => {
-                let dom = `
-                      <li>
-            <div class="w3layouts-banner-top">
+            let dom
+            res.data.BannerList.forEach((item, index) => {
+                let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
 
-                <div class="container">
-                <img src=${item.picUrl}>
-                </div>
-                </div>
-                </li>
-                    `
-                $('#JiSlider ul').append(dom)
+                if (index === 0) {
+                    dom = `<div class="item active">
+          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                } else {
+                    dom = `<div class="item">
+           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                }
+
+                $('#dog').append(dogdom)
+                $('#shuffling').append(dom)
             })
 
             //关于悦为

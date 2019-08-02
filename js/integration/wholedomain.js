@@ -14,15 +14,23 @@ function bangQuery() {
             /**
              * 轮播
              * */
-            res.data.bannerList.forEach(item => {
-                let shufflingDom = ` <li>
-                <div class="w3layouts-banner-top">
-                    <div class="container">
-                        <img src=${item.picUrl}>
-                    </div>
-                </div>
-            </li>`
-                $('#shuffling').append(shufflingDom)
+                // 轮播
+            let domshuffling
+            res.data.bannerList.forEach((item, index) => {
+                let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
+
+                if (index === 0) {
+                    domshuffling = `<div class="item active">
+          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                } else {
+                    domshuffling = `<div class="item">
+           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                }
+
+                $('#dog').append(dogdom)
+                $('#shuffling').append(domshuffling)
             })
 
             // 全域运营

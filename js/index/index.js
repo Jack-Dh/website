@@ -1,24 +1,22 @@
 let data
 $(function () {
-
+    $('#daiyunyin').hide()
     bangQuery()
     $('.yewu').click(function () {
         $(this).addClass('selected').siblings().removeClass('selected')
     })
 
 
-
-
     /**
      * 实时资讯鼠标滚动事件
      * */
-    $('#information').on('mousemove','p',function () {
+    $('#information').on('mousemove', 'p', function () {
         $(this).addClass('informationselect').siblings().removeClass('informationselect')
-        let newsindex=$(this).attr('newid')
+        let newsindex = $(this).attr('newid')
         // let data=JSON.parse($.cookie('newslist'))
         console.log(data)
         console.log(data[newsindex])
-        let newsdom=` <div class="col-md-6" style="padding: 0;">
+        let newsdom = ` <div class="col-md-6" style="padding: 0;">
 
                 <img style="width: 100%" class="fa fa-bar-chart" src=${data[newsindex].picUrl}>
             </div>
@@ -33,11 +31,6 @@ $(function () {
         $('#news').children().remove()
         $('#news').append(newsdom)
     })
-
-
-
-
-
 
 
 })
@@ -60,140 +53,220 @@ function bangQuery() {
             console.log(res)
             //轮播
             let liNum = $('#JiSlider li').length
+
             if (liNum === 0) {
-                res.data.bannerList.forEach(item => {
-                    let dom = `
-                  <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top2">
-                    <div class="container">
-                    <img src=${item.picUrl}>
-                    </div>
-                    </div>
-                    </li>
-                `
-                    $('#JiSlider ul').append(dom)
+                let dom
+                res.data.bannerList.forEach((item, index) => {
+                    let dogdom = ` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
 
+                    if (index === 0) {
+                        dom = `<div class="item active">
+          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                    } else {
+                        dom = `<div class="item">
+           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                    }
 
+                    $('#dog').append(dogdom)
+                    $('#shuffling').append(dom)
                 })
+                // $('#shuffling').html(dom)
             }
 
             //品牌客户
-            res.data.brandMap.服饰.forEach((item,index) => {
-                let dom = `
-                    <li>
-                    <div class="w3layouts_event_grid" >
-                        <div class="w3_agile_event_grid1">
-                            <img src=${item.picUrl} alt=" " class="img-responsive"/>
-                        </div>
-                        <div class="agileits_w3layouts_event_grid1" >
+            res.data.brandMap.服饰.forEach((item, index) => {
+
+                if (index < 3) {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
                             <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
-                            ${item.content}
+                            <div style=" overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;（行数）
+    -webkit-box-orient: vertical;">${item.content}</div>
                         </div>
-                    </div>
-                </li>
-                `
-                $('#flexiselDemo1').append(dom)
+                        </div>
+                        `
+                    $('#carousel-inner').append(dom)
+                } else {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
+                                   <div style=" overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;（行数）
+    -webkit-box-orient: vertical;">${item.content}</div>
+                        </div>
+                        </div>
+                        `
+                    $('#carousel-innertwo').append(dom)
+                }
+
 
             })
 
-            res.data.brandMap.食品.forEach((item,index) => {
-                let dom = `
-                    <li>
-                    <div class="w3layouts_event_grid" >
-                        <div class="w3_agile_event_grid1">
-                            <img src=${item.picUrl} alt=" " class="img-responsive"/>
-                        </div>
-                        <div class="agileits_w3layouts_event_grid1" >
+
+            res.data.brandMap.食品.forEach((item, index) => {
+                if (index < 3) {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
                             <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
                             ${item.content}
                         </div>
-                    </div>
-                </li>
-                `
-                $('#food').append(dom)
+                        </div>
+                        `
+                    $('#carousel-inner_food').append(dom)
+                } else {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
+                            ${item.content}
+                        </div>
+                        </div>
+                        `
+                    $('#carousel-foodtwo').append(dom)
+                }
+
 
             })
 
-            res.data.brandMap.母婴.forEach((item,index) => {
-                let dom = `
-                    <li>
-                    <div class="w3layouts_event_grid" >
-                        <div class="w3_agile_event_grid1">
-                            <img src=${item.picUrl} alt=" " class="img-responsive"/>
-                        </div>
-                        <div class="agileits_w3layouts_event_grid1" >
+            res.data.brandMap.母婴.forEach((item, index) => {
+                if (index < 3) {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
                             <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
                             ${item.content}
                         </div>
-                    </div>
-                </li>
-                `
-                $('#infant').append(dom)
+                        </div>
+                        `
+                    $('#carousel-inner_infant').append(dom)
+                } else {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
+                            ${item.content}
+                        </div>
+                        </div>
+                        `
+                    $('#carousel-infanttwo').append(dom)
+                }
+
 
             })
 
-            res.data.brandMap.美妆.forEach((item,index) => {
-                let dom = `
-                    <li>
-                    <div class="w3layouts_event_grid" >
-                        <div class="w3_agile_event_grid1">
-                            <img src=${item.picUrl} alt=" " class="img-responsive"/>
-                        </div>
-                        <div class="agileits_w3layouts_event_grid1" >
+            res.data.brandMap.美妆.forEach((item, index) => {
+                if (index < 3) {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
                             <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
                             ${item.content}
                         </div>
-                    </div>
-                </li>
-                `
-                $('#makeup').append(dom)
+                        </div>
+                        `
+                    $('#carousel-makeup').append(dom)
+                } else {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
+                            ${item.content}
+                        </div>
+                        </div>
+                        `
+                    $('#carousel-makeuptwo').append(dom)
+                }
 
             })
 
-            res.data.brandMap.家居.forEach((item,index) => {
-                let dom = `
-                    <li>
-                    <div class="w3layouts_event_grid" >
-                        <div class="w3_agile_event_grid1">
-                            <img src=${item.picUrl} alt=" " class="img-responsive"/>
-                        </div>
-                        <div class="agileits_w3layouts_event_grid1" >
+            res.data.brandMap.家居.forEach((item, index) => {
+                if (index < 3) {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
                             <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
                             ${item.content}
                         </div>
-                    </div>
-                </li>
-                `
-                $('#household').append(dom)
+                        </div>
+                        `
+                    $('#carousel-household').append(dom)
+                } else {
+                    let dom = `
+                        <div class="col-xs-4 ">
+                            <div class="flex-item">
+                                <img class="img-responsive" src=${item.picUrl}>
+                            </div>
+                             <div class="agileits_w3layouts_event_grid1" >
+                            <h5><a href="#" data-toggle="modal" data-target="#myModal">${item.title}</a></h5>
+                            ${item.content}
+                        </div>
+                        </div>
+                        `
+                    $('#carousel-householdtwo').append(dom)
+                }
 
             })
 
 
             //主营业务
-            res.data.businessMap.整店代运营服务.forEach(item=>{
-                let dom=`
-                   <li>
-                            <img src=${item.picUrl} alt=" " class="img-responsive"/>
-                        </li>
+            res.data.businessMap.整店代运营服务.forEach(item => {
+                let dom = `<div class="col-sm-3"><img src=${item.picUrl} alt=" " class="img-responsive"/></div>
+                   
                 `
-                $('#flexiselDemo2').append(dom)
+                $('#im').append(dom)
             })
-            res.data.businessMap.整合营销服务.forEach(item=>{
-                let dom=`
-                   <li>
-                            <img src=${item.picUrl} alt=" " class="img-responsive"/>
-                        </li>
+
+            res.data.businessMap.整合营销服务.forEach(item => {
+                let dom = `<div class="col-sm-3"><img src=${item.picUrl} alt=" " class="img-responsive"/></div>
+                   
                 `
-                $('#servicesing').append(dom)
+                $('#imtwo').append(dom)
             })
 
 
             // 悦为优势
-            let arr=res.data.advantageList
+            let arr = res.data.advantageList
 
-            let brr=arr.splice(0,4)
-                arr.forEach(item=>{
-                    let dom=`
+            let brr = arr.splice(0, 4)
+            arr.forEach(item => {
+                let dom = `
                       <div class="col-md-3 agileits_banner_bottom_grid">
                     <div class="hovereffect w3ls_banner_bottom_grid">
                      <img src=${item.picUrl} alt=" " class="img-responsive"/>
@@ -204,10 +277,10 @@ function bangQuery() {
                     </div>
                 </div>
                     `
-                    $('#youshione').append(dom)
-                })
-            brr.forEach(item=>{
-                let dom=`
+                $('#youshione').append(dom)
+            })
+            brr.forEach(item => {
+                let dom = `
                       <div class="col-md-3 agileits_banner_bottom_grid" style="margin-top: 2%">
                     <div class="hovereffect w3ls_banner_bottom_grid">
                         <img src=${item.picUrl} alt=" " class="img-responsive"/>
@@ -224,21 +297,21 @@ function bangQuery() {
 
             //实时资讯information
 
-            let arrs=res.data.newsList.splice(0,3)
-            data=arrs
+            let arrs = res.data.newsList.splice(0, 3)
+            data = arrs
 
-            let arrsStr=JSON.stringify(arrs)
+            let arrsStr = JSON.stringify(arrs)
             console.log(data)
             window.location.href
             $.cookie('newslist', arrs, {path: '/'});//储存到cookie中
 
-            arrs.forEach((item,index)=>{
-                let dom=` <p newid=${index} style="background-color:#ffffff;padding: 3%;margin-bottom: 4%">
+            arrs.forEach((item, index) => {
+                let dom = ` <p newid=${index} style="background-color:#ffffff;padding: 3%;margin-bottom: 4%">
                         12/5<span>${item.title}</span></p>`
                 $('#information').append(dom)
             })
 
-            let newsdom=` <div class="col-md-6" style="padding: 0;">
+            let newsdom = ` <div class="col-md-6" style="padding: 0;">
 
                         <img style="width: 100%" class="fa fa-bar-chart" src=${arrs[0].picUrl}>
                     </div>
@@ -264,18 +337,19 @@ function bangQuery() {
 /*
 * 品牌客户类目切换
 * */
-function classification(id) {
+function classification(id, c) {
     // $('.food').show()
     $('.food,.flexiselDemo1,.infant,.makeup,.household').hide()
     $(`.${id}`).show()
 
 }
+
 /**
  * 主营业务切换
  * */
 function yewu(id) {
 
-    $('.servicesing,.flexiselDemo2').hide()
-    $(`.${id}`).show()
+    $('#yingxiao,#daiyunyin').hide()
+    $(`#${id}`).show()
 
 }

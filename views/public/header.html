@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="ie-stand">
+    <meta name="keywords" content=""/>
+    <!-- //custom-theme -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../../css/JiSlider.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" property=""/>
+    <!-- Owl-carousel-CSS -->
+    <link href="../../css/owl.carousel.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- font-awesome-icons -->
+    <link href="../../css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900"
+          rel="stylesheet">
+          
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+	<script src="../../js/integration/bootstrap.js"></script>
+	<script type="module" src="./js/config/api.js"></script>
+
+</head>
+
+<body>
+<!-- banner -->
+<div class="main_section_agile">
+    <div class="agileits_w3layouts_banner_nav">
+        <!--导航-->
+        <nav class="navbar navbar-default  FloatingButtons " id="navstyle">
+            <div class="navbar-header navbar-left">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--                <a style=" padding-left: 10px; line-height: 50px;" class="navbar-brand" href="#"><h1>悦为电商</h1></a>-->
+                <a  class="navbar-brand" href="#">
+                    <img style="width: 60px;margin-top:-7px;" src="../../images/index/logo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <nav class="link-effect-2" id="link-effect-2">
+                    <ul class="nav navbar-nav">
+                        <li id="index" class="dropdown"><a href="index.html" class="effect-3">首页</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">整合营销<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu agile_short_dropdown">
+                                <li id="wholedomain"><a href="./views/integration/wholedomain.html">全域运营</a></li>
+                                <li id="content"><a href="./views/integration/content.html">内容运营</a></li>
+                                <li id="live"><a href="./views/integration/live.html">直播代运营</a></li>
+                                <li id="micro"><a href="./views/integration/micro.html">双微代运营</a></li>
+                                <li id="domain"><a href="./views/integration/domain.html">私域运营</a></li>
+                                <li id="Hotstyle"><a href="./views/integration/Hotstyle.html">爆款计划</a></li>
+                                <li id="video"><a href="./views/integration/video.html">视频/摄影</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">全渠道代运营<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu agile_short_dropdown">
+                                <li id="cross-border"><a href="./views/channels/cross-border.html">跨境业务</a></li>
+                                <li id="dataServices"><a href="./views/channels/dataServices.html">数据服务</a></li>
+                                <li id="wholoShop"><a href="./views/channels/wholeShop.html">整店托管运营</a></li>
+                                <li id="visual"><a href="./views/channels/visual.html">品牌视觉</a></li>
+                                <li id="planning"><a href="./views/channels/planning.html">品牌策划</a></li>
+                                <li id="Customer"><a href="./views/channels/Customer.html">客服服务</a></li>
+                                <li id="logistics"><a href="./views/channels/logistics.html">仓储物流</a></li>
+                            </ul>
+                        </li>
+                        <li id="case">
+                            <a href="case.html" class="effect-3">经典案例</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">关于我们<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu agile_short_dropdown">
+                                <li id="Aboutus"><a href="Aboutus.html">关于悦为</a></li>
+                                <li id="news"><a href="news.html">新闻中心</a></li>
+
+                            </ul>
+                        </li>
+                        <li id="typography" class="dropdown">
+                            <a href="typography.html" class="effect-3">加入我们</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+    	var location = window.location.href;
+    	var id = location.substring(location.lastIndexOf("/")+1,location.lastIndexOf("."));
+    	$("#"+id).addClass("active");
+    })
+</script>

@@ -1,5 +1,7 @@
 html, body {
     font-size: 100%;
+    width: 100%;
+    height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     background: #ffffff;
     margin: 0;
@@ -5851,6 +5853,19 @@ h3.agileinfo_sign {
 .hovers {
     background-color: #224e6b !important;
 }
+/*.carousel{*/
+/*  height: 50%!important;*/
+/*}*/
+/*.carousel.shuffling .item{*/
+/*    height: 30%!important;*/
+/*}*/
+/*.carousel.shuffling .item img{*/
+
+/*    min-height: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
+
+
 
 /*.arrow {*/
 /*    width: 100px;*/

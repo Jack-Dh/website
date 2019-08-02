@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>悦为电商</title>
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -19,10 +19,21 @@
     <!-- //font-awesome-icons -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900"
           rel="stylesheet">
+    <link rel="stylesheet" href="./css/flexible-bootstrap-carousel.css">
+    <script type="text/javascript" src="js/flexible-bootstrap-carousel.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+        !important;
+        }
+    </style>
+
 
 </head>
 
-<body>
+<body style="width: 100%;height: 100%">
+
+
 <!-- banner -->
 <div class="main_section_agile">
     <div class="agileits_w3layouts_banner_nav">
@@ -37,7 +48,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!--                <a style=" padding-left: 10px; line-height: 50px;" class="navbar-brand" href="#"><h1>悦为电商</h1></a>-->
-                <a  class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#">
                     <img style="width: 60px;margin-top:-7px;" src="./images/index/logo.png"></a>
             </div>
 
@@ -95,63 +106,33 @@
         <div class="clearfix"></div>
     </div>
 </div>
+
 <!-- 轮播 -->
-<div class="banner-silder" style="position: relative;">
-    <div id="JiSlider" class="jislider">
-        <ul>
-            <!--            <li>-->
-            <!--                <div class="w3layouts-banner-top">-->
-            <!--                    <div class="container">-->
-            <!--                        <img src="./images/1920-950.jpg">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </li>-->
-            <!--            <li>-->
-            <!--                <div class="w3layouts-banner-top w3layouts-banner-top1">-->
-            <!--                    <div class="container">-->
-            <!--                        <img src="./images/1920-950.jpg">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </li>-->
-            <!--            <li>-->
-            <!--                <div class="w3layouts-banner-top w3layouts-banner-top2">-->
-            <!--                    <div class="container">-->
-            <!--                        <img src="./images/1920-950.jpg">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </li>-->
-        </ul>
+<div id="carousel-example-generic" class="carousel slide shuffling" data-ride="carousel">
+    <ol class="carousel-indicators" id="dog">
+        <!--        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>-->
+        <!--        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>-->
+        <!--        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>-->
+    </ol>
+    <div class="carousel-inner" role="listbox" id="shuffling">
+        <!--        <div class="item active">-->
+        <!--            <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide [900x500]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM1NTUvdGV4dDpGaXJzdCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2YzRiODFjOGJmIHRleHQgeyBmaWxsOiM1NTU7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NDVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTZjNGI4MWM4YmYiPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjNzc3Ii8+PGc+PHRleHQgeD0iMzA4LjI5Njg3NSIgeT0iMjcwLjEiPkZpcnN0IHNsaWRlPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">-->
+        <!--        </div>-->
+        <!--        <div class="item ">-->
+        <!--            <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNjY2OiM0NDQvdGV4dDpTZWNvbmQgc2xpZGUKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmM0YjgxZDgyOSB0ZXh0IHsgZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YzRiODFkODI5Ij48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjxnPjx0ZXh0IHg9IjI2NC45NTMxMjUiIHk9IjI3MC4xIj5TZWNvbmQgc2xpZGU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">-->
+        <!--        </div>-->
+        <!--        <div class="item">-->
+        <!--            <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide [900x500]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNTU1OiMzMzMvdGV4dDpUaGlyZCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2YzRiODFiYmM5IHRleHQgeyBmaWxsOiMzMzM7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NDVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTZjNGI4MWJiYzkiPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjNTU1Ii8+PGc+PHRleHQgeD0iMjk4LjMyMDMxMjUiIHk9IjI3MC4xIj5UaGlyZCBzbGlkZTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">-->
+        <!--        </div>-->
     </div>
-    <!-- 浮动定位按钮-->
-    <div id="Floatinginput" class="FloatingButton">
-        <input placeholder="搜索" type="text" style="padding-left: 20px;width: 70%;border: none">
-        <div style="width: 20%" class=" navbotton" onclick="taggerinput('process')">
-            <span class="glyphicon glyphicon-search"></span>
-        </div>
-        <div style="width: 20%" class=" navbotton" onclick="taggerinput('process')">
-            <span class="glyphicon glyphicon-remove"></span>
-        </div>
-    </div>
-    <div id="FloatingButton" class="FloatingButton">
-        <div class="navbotton bagStyle text-nowrap" onclick="jump('customers')" style="border-right: 1px solid #eaeaea">
-            <span class="glyphicon glyphicon-user" style="margin-right: 6px"></span>品牌客户
-        </div>
-
-        <div class=" navbotton text-nowrap" onclick="jump('business')" style="border-right: 1px solid #eaeaea">
-            <span class="glyphicon glyphicon-stats" style="margin-right: 6px"></span>主营业务
-        </div>
-
-        <div class=" navbotton text-nowrap" onclick="jump('advantage')" style="border-right: 1px solid #eaeaea">
-            <span class="glyphicon glyphicon-ok-sign " style="margin-right: 6px"></span>悦为优势
-        </div>
-
-        <div class=" navbotton text-nowrap" onclick="jump('process')" style="border-right: 1px solid #eaeaea">
-            <span style="margin-right: 6px" class="glyphicon glyphicon-send"></span>合作流程
-        </div>
-        <div class=" navbotton" style="width: 10%" onclick="tagger('process')">
-            <span style="margin-right: 3px" class="glyphicon glyphicon-search"></span>
-        </div>
-    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 
 
@@ -288,8 +269,6 @@
     </div>
 </div>
 
-
-
 <div id="customers" class="medile_agile_its_section">
     <!--品牌客户-->
     <div class="col-md-3 medile_agile_its_blue">
@@ -298,37 +277,316 @@
     <div class="tab-content col-md-9">
         <!--服饰-->
         <div class="flexiselDemo1">
-            <ul id="flexiselDemo1" class="band"></ul>
+            <div class="carousel-example">
+                <div id="simple-content-carousel" class="carousel flexible slide" data-ride="carousel" data-interval="2000"
+                     data-wrap="true">
+                    <div class="carousel-inner"  role="listbox">
+                        <div class="item active">
+                            <div class="row" id="carousel-inner">
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+
+                            </div>
+                        </div>
+                        <div class="item" id="carousel-innertwo">
+                            <!--                    <div class="row">-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                    </div>-->
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#simple-content-carousel" role="button" data-slide="next">
+                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
         <!-- 食品酒水-->
         <div class="food">
-            <ul id="food" class="band"></ul>
+
+            <div class="carousel-example">
+                <div   class="carousel flexible slide" data-ride="carousel" data-interval="2000"
+                     data-wrap="true">
+                    <div class="carousel-inner"  role="listbox">
+                        <div class="item active">
+                            <div class="row" id="carousel-inner_food">
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+
+                            </div>
+                        </div>
+                        <div class="item" id="carousel-foodtwo">
+                            <!--                    <div class="row">-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                    </div>-->
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#simple-content-carousel" role="button" data-slide="next">
+                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
         <!-- 母婴-->
         <div class="infant">
-            <ul id="infant" class="band"></ul>
+
+            <div class="carousel-example">
+                <div   class="carousel flexible slide" data-ride="carousel" data-interval="2000"
+                       data-wrap="true">
+                    <div class="carousel-inner"  role="listbox">
+                        <div class="item active">
+                            <div class="row" id="carousel-inner_infant">
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+
+                            </div>
+                        </div>
+                        <div class="item" id="carousel-infanttwo">
+                            <!--                    <div class="row">-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                    </div>-->
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#simple-content-carousel" role="button" data-slide="next">
+                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
         <!--美妆-->
         <div class="makeup">
-            <ul id="makeup" class="band"></ul>
+            <div class="carousel-example">
+                <div   class="carousel flexible slide" data-ride="carousel" data-interval="2000"
+                       data-wrap="true">
+                    <div class="carousel-inner"  role="listbox">
+                        <div class="item active">
+                            <div class="row" id="carousel-makeup">
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+
+                            </div>
+                        </div>
+                        <div class="item" id="carousel-makeuptwo">
+                            <!--                    <div class="row">-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                    </div>-->
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#simple-content-carousel" role="button" data-slide="next">
+                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <!--家居-->
         <div class="household">
-            <ul id="household" class="band"></ul>
+            <div class="carousel-example">
+                <div   class="carousel flexible slide" data-ride="carousel" data-interval="2000"
+                       data-wrap="true">
+                    <div class="carousel-inner"  role="listbox">
+                        <div class="item active">
+                            <div class="row" id="carousel-household">
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+                                <!--                        <div class="col-xs-4 ">-->
+                                <!--                            <div class="flex-item">-->
+                                <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+
+                            </div>
+                        </div>
+                        <div class="item" id="carousel-householdtwo">
+                            <!--                    <div class="row">-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="col-xs-4 ">-->
+                            <!--                            <div class="flex-item">-->
+                            <!--                                <img class="img-responsive" src="images/index/319-180-3.jpg">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                    </div>-->
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#simple-content-carousel" role="button" data-slide="next">
+                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
 
     </div>
 
 
-    <div class="inner_main_agile_section" >
+    <div class="inner_main_agile_section">
         <div class="container" style="text-align: center;">
             <p style="font-size: 1.8rem;color: #212125;margin-top: 50%;font-weight: myfont" class="clients">主营业务</p>
             <p class="sub_para_agile two Our" style="font-size: 2rem">Our business</p>
-            <ul class="tablist" >
-                <li class="selected yewu" onclick="yewu('flexiselDemo2')">整店代运营服务</li>
-                <li class="yewu" onclick="yewu('servicesing')">整合营销服务</li>
+            <ul class="tablist">
+                <li class="selected yewu" onclick="yewu('daiyunyin')">整店代运营服务</li>
+                <li class="yewu" onclick="yewu('yingxiao')">整合营销服务</li>
             </ul>
         </div>
     </div>
@@ -336,29 +594,19 @@
 
 
 
+
     <!--主营业务-->
-    <div id="business" class="medile_agile_its_section container" style="text-align: center;">
+    <!--家居-->
 
-        <div>
-            <div class="tab-content">
-                <div class="active flexiselDemo2" id="homes">
-                    <ul id="flexiselDemo2">
-
-                    </ul>
-                </div>
-                <div  class="servicesing">
-                    <ul id="servicesing">
-
-                    </ul>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <div class="clearfix"></div>
+    <div id="daiyunyin"  class="container" style="padding: 10% 0 10% 0">
+        <div class="row" id="im"></div>
     </div>
+
+<!-- 整合营销-->
+    <div id="yingxiao"  class="container" style="padding: 10% 0 10% 0">
+        <div class="row" id="imtwo"></div>
+    </div>
+
 
 
     <!--悦为优势-->
@@ -372,87 +620,87 @@
     <div class="banner-bottom" style="background: #224e6b">
         <div class="container">
             <div class="agileits_banner_bottom_grids" id="youshione">
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/index/272-194-22.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>淘宝大学</h4>-->
-<!--                            <p>企业电子商务培训，淘大金牌企业导师-->
-<!--                                淘内/淘外授课百余堂</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/index/272-194-1.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>天猫智囊团</h4>-->
-<!--                            <p>猫智囊团商家，手机淘宝产品开发特-->
-<!--                                邀商家及讲师，第一时间第一手资讯</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/index/272-194-3.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>产品数据研发</h4>-->
-<!--                            <p>挖掘数据价值，数据驱动C2B新品研发</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/4.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>五星TP/金牌淘搭档</h4>-->
-<!--                            <p>经淘宝网从淘宝服务商中严格审核，最-->
-<!--                                终选出的优质电子商务服务提供商</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/index/272-194-22.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>淘宝大学</h4>-->
+                <!--                            <p>企业电子商务培训，淘大金牌企业导师-->
+                <!--                                淘内/淘外授课百余堂</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/index/272-194-1.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>天猫智囊团</h4>-->
+                <!--                            <p>猫智囊团商家，手机淘宝产品开发特-->
+                <!--                                邀商家及讲师，第一时间第一手资讯</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/index/272-194-3.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>产品数据研发</h4>-->
+                <!--                            <p>挖掘数据价值，数据驱动C2B新品研发</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/4.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>五星TP/金牌淘搭档</h4>-->
+                <!--                            <p>经淘宝网从淘宝服务商中严格审核，最-->
+                <!--                                终选出的优质电子商务服务提供商</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="clearfix"></div>
             </div>
             <div id="youshitwo" class="agileits_banner_bottom_grids two">
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/index/272-194-55.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>免IT</h4>-->
-<!--                            <p>免费提供ERP，CRM等IT系统使用</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/index/272-194-66.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>云数据</h4>-->
-<!--                            <p>全网行业数据采集和分析研究</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/index/272-194-7.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>品销合一</h4>-->
-<!--                            <p>新营销生态模式，深化生态共建合作，-->
-<!--                                助力品牌实现从“品效合一”到“品销-->
-<!--                                合一”的跨越</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
-<!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
-<!--                        <img src="images/index/272-194-8.jpg" alt=" " class="img-responsive"/>-->
-<!--                        <div class="overlay">-->
-<!--                            <h4>私域运营</h4>-->
-<!--                            <p>悦为自有会员350万，精准匹配给合作-->
-<!--                                客户，强大的CRM会员营销</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/index/272-194-55.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>免IT</h4>-->
+                <!--                            <p>免费提供ERP，CRM等IT系统使用</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/index/272-194-66.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>云数据</h4>-->
+                <!--                            <p>全网行业数据采集和分析研究</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/index/272-194-7.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>品销合一</h4>-->
+                <!--                            <p>新营销生态模式，深化生态共建合作，-->
+                <!--                                助力品牌实现从“品效合一”到“品销-->
+                <!--                                合一”的跨越</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-md-3 agileits_banner_bottom_grid">-->
+                <!--                    <div class="hovereffect w3ls_banner_bottom_grid">-->
+                <!--                        <img src="images/index/272-194-8.jpg" alt=" " class="img-responsive"/>-->
+                <!--                        <div class="overlay">-->
+                <!--                            <h4>私域运营</h4>-->
+                <!--                            <p>悦为自有会员350万，精准匹配给合作-->
+                <!--                                客户，强大的CRM会员营销</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="clearfix"></div>
             </div>
         </div>
@@ -469,34 +717,35 @@
     <!-- 实时资讯 -->
     <div class="services" id="services" style="background: url('./images/index/1920-761.jpg')">
         <div class="container">
-            <h3 class="w3l_header w3_agileits_header two clients" style=";font-weight: myfont;font-size: 1.8rem">实时资讯</h3>
+            <h3 class="w3l_header w3_agileits_header two clients" style=";font-weight: myfont;font-size: 1.8rem">
+                实时资讯</h3>
             <h3 class="w3l_header w3_agileits_header two Our">Information</h3>
 
             <div class="agile_inner_grids">
                 <!-- choose icon -->
                 <div id="news" class="col-md-6 choose_icon row" style="background: #ffffff;padding: 0">
-<!--                    <div class="col-md-6" style="padding: 0;">-->
+                    <!--                    <div class="col-md-6" style="padding: 0;">-->
 
-<!--                        <img style="width: 100%" class="fa fa-bar-chart" src="images/index/272-194-22.jpg">-->
-<!--                    </div>-->
-<!--                    <div class=" col-md-6">-->
+                    <!--                        <img style="width: 100%" class="fa fa-bar-chart" src="images/index/272-194-22.jpg">-->
+                    <!--                    </div>-->
+                    <!--                    <div class=" col-md-6">-->
 
-<!--                        <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>-->
-<!--                        <p style="color: #8f8f8e">-->
-<!--                            悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣</p>-->
+                    <!--                        <h3 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">悦为总经理王梓欣</h3>-->
+                    <!--                        <p style="color: #8f8f8e">-->
+                    <!--                            悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣悦为总经理王梓欣</p>-->
 
-<!--                    </div>-->
+                    <!--                    </div>-->
                     <div class="clearfix"></div>
                 </div>
 
                 <!-- choose icon -->
                 <div id="information" class="col-md-5 col-md-offset-1" style="padding: 0">
-<!--                    <p class="informationselect" style="background-color:#ffffff;padding: 3% ">-->
-<!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
-<!--                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">-->
-<!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
-<!--                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">-->
-<!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
+                    <!--                    <p class="informationselect" style="background-color:#ffffff;padding: 3% ">-->
+                    <!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
+                    <!--                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">-->
+                    <!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
+                    <!--                    <p style="background-color:#ffffff;padding: 3%;margin-top: 5%">-->
+                    <!--                        12/5<span>悦为电商荣获2018福布斯中国新三板企业TOP100</span></p>-->
                 </div>
 
                 <div class="clearfix"></div>
@@ -699,7 +948,6 @@
             // })
 
 
-
             // $(window).scroll(function(){
             //     let N=$(document).scrollTop()
             //     if (N>0){
@@ -736,7 +984,7 @@
 
         }
     </script>
-    <!-- //here ends scrolling icon -->
+
 </div>
 </body>
 </html>

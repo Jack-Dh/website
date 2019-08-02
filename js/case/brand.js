@@ -26,18 +26,23 @@ function bangQuery(type = 2, category = '服饰') {
             let liNum = $('#banner li').length
 
             if (liNum === 0) {
-                res.data.bannerList.forEach(item => {
-                    let dom = `<li>
-                <div class="w3layouts-banner-top">
-                    <div class="container">
-                        <img src=${item.picUrl}>
-                    </div>
-                </div>
-            </li>`
-                    $('#banner').append(dom)
-                    /**
-                     * 轮播 end
-                     * */
+                // 轮播
+                let dom
+                res.data.bannerList.forEach((item, index) => {
+                    let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
+
+                    if (index === 0) {
+                        dom = `<div class="item active">
+          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                    } else {
+                        dom = `<div class="item">
+           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        </div>`
+                    }
+
+                    $('#dog').append(dogdom)
+                    $('#shuffling').append(dom)
                 })
             }
 

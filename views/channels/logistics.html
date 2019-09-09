@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content=""/>
     <!-- //custom-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
     <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="../../css/JiSlider.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" property=""/>
@@ -19,7 +20,7 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900"
           rel="stylesheet">
     <link rel="stylesheet" href="../../css/font_983414_78qmaosmgwc/iconfont.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
 
     <style type="text/css">
         .title:hover {
@@ -228,22 +229,13 @@
 <div class="container" style="margin-top: 5%">
     <div class="row">
         <div class="col-md-6" >
-            <ul id="flexiselDemo2">
-<!--                <li>-->
-<!--                    <img style="max-width: 100%" src="../../images/channels/logistics/03.png" alt=" "-->
-<!--                         class="img-responsive"/>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <img style="max-width: 100%" src="../../images/channels/logistics/03.png" alt=" "-->
-<!--                         class="img-responsive"/>-->
+            <div   class="swiper-container">
+                <div class="swiper-wrapper" id="im"></div>
+            </div>
+<!--            <ul id="flexiselDemo2">-->
 
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <img style="max-width: 100%" src="../../images/channels/logistics/03.png" alt=" "-->
-<!--                         class="img-responsive"/>-->
-<!--                </li>-->
 
-            </ul>
+<!--            </ul>-->
         </div>
 
         <div id="dockeListtitle" class="col-md-6" style="padding-left: 6%;margin-top: 80px;font-family: myfont;line-height: 2rem;">
@@ -323,8 +315,8 @@
         </div>
         <hr style="filter: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color="#6f5499" size="10"/>
         <div class="agileinfo_copyright">
-            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为电子商务股份有限公司 <span
-                    style="color: #f37d7c">苏ICP备17049592号-1</span></p>
+            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为网络科技有限公司 <span
+                    style="color: #f37d7c">沪ICP备19030740号-1</span></p>
         </div>
     </div>
 </div>
@@ -505,6 +497,18 @@
 <script src="../../js/logistics.js"></script>
 <script type="module" src="../../js/config/api.js"></script>
 <script type="text/javascript" src="../../js/channels/logisticsing.js"></script>
-<!-- //here ends scrolling icon -->
+<script type="text/javascript">
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+
+    })
+
+</script>
 </body>
 </html>

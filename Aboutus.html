@@ -182,7 +182,7 @@
     <div style="margin-right: 5%" class="col-md-2">
         <p><i class="fontFamily hhtx-chengxin"></i></p>
         <p>诚信</p>
-        <p>HONES</p>
+        <p >HONES</p>
         <p style="margin-top: 5%;font-size: 0.8rem">
             诚实的面对客户和员工，<br>信守对客户和员工的承诺，<br>因为诚信，所以成功 。
         </p>
@@ -190,7 +190,9 @@
     <div style="margin-right: 5%" class="col-md-2">
         <p><i class="fontFamily hhtx-zerenxin"></i></p>
         <p>责任</p>
-        <p>PESPONSIBLE</p>
+        <p style="overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;">PESPONSIBLE</p>
         <p style="margin-top: 5%;font-size: 0.8rem">
             责任催生才华，<br>具有悦为特色的高度责任感<br>让每一个悦为人对细节<BR>精益求精不断追求。
         </p>
@@ -241,8 +243,8 @@
         </div>
         <hr style="filter: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color="#6f5499" size="10"/>
         <div class="agileinfo_copyright">
-            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为电子商务股份有限公司 <span
-                    style="color: #f37d7c">苏ICP备17049592号-1</span></p>
+            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为网络科技有限公司 <span
+                    style="color: #f37d7c">沪ICP备19030740号-1</span></p>
         </div>
     </div>
 </div>
@@ -379,6 +381,18 @@
 <script src="js/main.js"></script>
 <script type="module" src="./js/config/api.js"></script>
 <script type="module" src="./js/Aboutus/Aboutus.js"></script>
-<!-- //here ends scrolling icon -->
+<script type="text/javascript">
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+
+    })
+
+</script>
 </body>
 </html>

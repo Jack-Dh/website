@@ -36,21 +36,22 @@ function bangQuery() {
             // 全域运营
             let wholedomaindom = `<div style="font-family: myfont;line-height: 2rem;padding: 0 10% 0 10%">
             <p>
-            <h3 style="margin-bottom: 5%;font-family: SourceHanSansCN-Bold">${res.data.firstList[0].title}</h3></p>
-            ${res.data.firstList[0].content}
+            <h3 style="margin-bottom: 5%;">${res.data.firstList[0].title}</h3></p>
+            <span style="text-indent:2em">
+            ${res.data.firstList[0].content}</span>
               </div>`
             $('#wholedomain').append(wholedomaindom)
 
 
             //全域矩阵
             let matrixdom = `
- <h3 style="margin-bottom: 5%;font-family: SourceHanSansCN-Bold">${res.data.secondList[0].title}</h3></p>
+ <h3 style="margin-bottom: 5%;">${res.data.secondList[0].title}</h3></p>
     <img style="max-width: 100%" src=${res.data.secondList[0].picUrl}>`
             $('#matrix').append(matrixdom)
 
 
             //悦为优势
-            let ywysdom = `  <h3 style="font-family: SourceHanSansCN-Bold">${res.data.thirdList[0].title}</h3>
+            let ywysdom = `  <h3>${res.data.thirdList[0].title}</h3>
     <div style="padding: 5% 8% 5% 8% " class="container text-center">
         <img style="max-width: 100%" src=${res.data.thirdList[0].picUrl}>
     </div>`

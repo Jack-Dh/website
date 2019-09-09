@@ -34,7 +34,7 @@ function bangQuery() {
             })
 
             // 整店托管代运营
-            let crossdom = `
+          /*   let crossdom = `
             <div class="col-md-5" style="margin-top: 80px;font-family: myfont;line-height: 2rem">
             <p>
             <h3 style="margin-bottom: 5%;font-family: SourceHanSansCN-Bold">数据服务</h3></p>
@@ -48,13 +48,13 @@ function bangQuery() {
 
 `
             // $(crossdom).appendTo('#cross-border')
-            $('#dataserver').append(crossdom)
+            $('#dataserver').append(crossdom) */
 
 
 
 
             // 整店托管代运营流程
-            let operateListdom = `
+        /*     let operateListdom = `
           
         <div>
             <img style="max-width: 100%" class="img-responsive center-block"
@@ -63,7 +63,10 @@ function bangQuery() {
 
 `
             // $(crossdom).appendTo('#cross-border')
-            $('#operateListdom').append(crossdom)
+            $('#operateListdom').append(crossdom) */
+
+
+
 
 
 

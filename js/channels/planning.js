@@ -35,7 +35,7 @@ function bangQuery() {
 
             // 品牌策划
             let olanningDom=`  <h3 style="font-family: SourceHanSansCN-Bold">${res.data.planList[0].title}</h3></p>
-    <div style="font-family: myfont;margin-top: 5%">${res.data.planList[0].content}</div>`
+    <div style="font-family: myfont;margin-top: 5%;text-indent:2em">${res.data.planList[0].content}</div>`
             $('#planning').append(olanningDom)
 
 
@@ -58,27 +58,27 @@ function bangQuery() {
 
 
             // 品牌策划优势
-            let ysDom=`  <div class="col-md-4 text-left">
+            let ysDom=`  <div class="col-md-4">
                 <p><i style="font-size: 3rem;color: #224e6b" class="fontFamily hhtx-pinpaifenxi"></i></p>
                 <p style="margin-top: 3%">
                 <h3>${res.data.advantageList[0].title}</h3></p>
-                <div style="margin-top: 5%;font-family: myfont;line-height: 1.5rem">
+                <div style="margin-top: 5%;font-family: myfont;line-height: 2rem">
                    ${res.data.advantageList[0].content}
                 </div>
             </div>
-            <div class="col-md-4 text-left">
+            <div class="col-md-4    ">
                 <p><i style="font-size: 3rem;color: #224e6b" class="fontFamily hhtx-xiangqing"></i></p>
                 <p style="margin-top: 3%">
                 <h3>${res.data.advantageList[1].title}</h3></p>
-                <div style="margin-top: 5%;font-family: myfont;line-height: 1.5rem">
+                <div style="margin-top: 5%;font-family: myfont;line-height: 2rem">
                    ${res.data.advantageList[1].content}
                 </div>
             </div>
-            <div class="col-md-4 text-left">
+            <div class="col-md-4 ">
                 <p><i style="font-size: 3rem;color: #224e6b" class="fontFamily hhtx-tuanduisvg"></i></p>
                 <p style="margin-top: 3%">
                 <h3>${res.data.advantageList[2].title}</h3></p>
-                <div style="margin-top: 5%;font-family: myfont;line-height: 1.5rem">
+                <div style="margin-top: 5%;font-family: myfont;line-height: 2rem">
                      ${res.data.advantageList[2].content}
                 </p>
             </div>`

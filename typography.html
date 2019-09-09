@@ -261,8 +261,8 @@
         </div>
         <hr style="filter: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color="#6f5499" size="10"/>
         <div class="agileinfo_copyright">
-            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为电子商务股份有限公司 <span
-                    style="color: #f37d7c">苏ICP备17049592号-1</span></p>
+            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为网络科技有限公司 <span
+                    style="color: #f37d7c">沪ICP备19030740号-1</span></p>
         </div>
     </div>
 </div>
@@ -273,40 +273,16 @@
 <!-- //js -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        $(".scroll").click(function (event) {
-            event.preventDefault();
-            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
-        });
-    });
-</script>
+
 <!-- start-smoth-scrolling -->
 <!-- for bootstrap working -->
 <script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        /*
-            var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-            };
-        */
-
-        $().UItoTop({easingType: 'easeOutQuart'});
-
-    });
-</script>
-
 
 <script type="text/javascript" src="js/jquery.flexisel.js"></script>
 <script type="text/javascript">
     $(function () {
-
         $("#flexiselDemo2").flexisel({
             visibleItems: 3,
             animationSpeed: 1000,
@@ -379,4 +355,17 @@
 <!--<script src="js/main.js"></script>-->
 <!-- //here ends scrolling icon -->
 </body>
+<script type="text/javascript">
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+
+    })
+
+</script>
 </html>

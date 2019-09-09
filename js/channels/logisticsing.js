@@ -17,7 +17,7 @@ function bangQuery() {
                 // 轮播
             let domshuffling
             res.data.bannerList.forEach((item, index) => {
-                let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
+                let dogdom = ` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
 
                 if (index === 0) {
                     domshuffling = `<div class="item active">
@@ -34,7 +34,7 @@ function bangQuery() {
             })
 
             // 仓储物流
-            let olanningDom=` <div class="text-center">
+            let olanningDom = ` <div class="text-center">
        <h3 style="margin-bottom: 5%;font-family: SourceHanSansCN-Bold">${res.data.logisticsList[0].title}</h3>
         </div>
          <div style="margin-top: 5%;padding: 0% 10% 0% 10%;font-family: myfont;text-align: center;line-height: 1.5rem">
@@ -44,9 +44,9 @@ function bangQuery() {
 
 
             //仓储物流痛点
-            let arr=res.data.painList.splice(0,3)
-                arr.forEach(item=>{
-                    let dom=`        <div class="col-md-4">
+            let arr = res.data.painList.splice(0, 3)
+            arr.forEach(item => {
+                let dom = `        <div class="col-md-4">
             <div class="w3_agile_event_grid1">
                 <img src=${item.picUrl} alt=" " class="img-responsive"/>
             </div>
@@ -57,12 +57,12 @@ function bangQuery() {
                 <p>&nbsp;</p>
             </div>
         </div>`
-                    $('#pointsOne').append(dom)
-                })
+                $('#pointsOne').append(dom)
+            })
 
 
-            res.data.painList.forEach(item=>{
-                let dom=`        <div class="col-md-4">
+            res.data.painList.forEach(item => {
+                let dom = `        <div class="col-md-4">
             <div class="w3_agile_event_grid1">
                 <img src=${item.picUrl} alt=" " class="img-responsive"/>
             </div>
@@ -78,38 +78,31 @@ function bangQuery() {
 
 
             //管理对接
-            let dockeListtitle=
+            let dockeListtitle =
                 `      <div id="dockeListtitle" class="col-md-6" style="padding-left: 6%;margin-top: 80px;font-family: myfont;line-height: 2rem;">
             <p>
             <h3 style="margin-bottom: 5%;font-family: SourceHanSansCN;font-size: 2.25rem;color: #2e6da4;font-weight: 350">
                 ${res.data.dockeList.title}</h3></p>
             <div style="font-size: 0.25rem;font-family: myfont;font-weight: bold">
-                ${res.data.dockeList.content }
+                ${res.data.dockeList.content}
             </div>
         </div>`
             $('#dockeListtitle').append(dockeListtitle)
 
 
-            res.data.dockeList.imageList.forEach(item=>{
-                let flexiselDemo2=`   <li>
-                <img style="max-width: 100%" src=${item} alt=" "
-                    class="img-responsive"/>-->
-            </li>`
-                $('#flexiselDemo2').append(flexiselDemo2)
+            res.data.dockeList.imageList.forEach(item => {
+                let dom = `<div class="swiper-slide"><img  src=${item} /></div>`
+                $('#im').append(dom)
+            })
+            var mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
             })
 
 
-
-
-
-
-
-
-
-
             //服务案例
-            res.data.caseList.forEach(item=>{
-                let dom=`
+            res.data.caseList.forEach(item => {
+                let dom = `
                  <div class="col-md-3">
                          <img style="max-width: 100%" src=${item.picUrl}>
                  </div>
@@ -118,7 +111,7 @@ function bangQuery() {
             })
 
             //合作流程
-            let processDom=` <img style="max-width: 100%" src=${res.data.cooperateList[0].picUrl}>`
+            let processDom = ` <img style="max-width: 100%" src=${res.data.cooperateList[0].picUrl}>`
             $('#LIc').append(processDom)
         }
     })

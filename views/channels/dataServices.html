@@ -178,7 +178,7 @@
         <p style="font-family: SourceHanSansCN-Bold;font-size: 1rem;color: #ffffff;margin-top: 5%">全面掌握市场行情和趋势，定位竞争对手，发现市场机会点，对制定电商策略形成有力支持</p>
         <div style="background-color: #ffffff;padding: 5%;margin-top: 5%" class="container">
             <div class="row">
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 ">
                     <p><i  style="font-size: 4rem;color: #224e6b" class="fontFamily hhtx-hangyefenxi"></i></p>
                     <p style="margin-top: 3%"><h3>行业分析</h3></p>
                     <p style="margin-top: 5%;font-family: myfont;line-height: 1.5rem" class="text-nowrap">
@@ -188,7 +188,7 @@
                         精确查看每个品牌的交易量和销售额
                         </p>
                 </div>
-                <div class="col-md-6 text-left">
+                <div class="col-md-6">
                     <p><i  style="font-size: 4rem;color: #224e6b" class="fontFamily hhtx-pinpaifenxi"></i></p>
                     <p style="margin-top: 3%"><h3>品牌分析</h3></p>
                     <p style="margin-top: 5%;font-family: myfont;line-height: 1.5rem" class="text-nowrap">
@@ -200,7 +200,7 @@
             </div>
 
             <div class="row" style="margin-top: 2%">
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 ">
                     <p><i  style="font-size: 4rem;color: #224e6b" class="fontFamily hhtx-dianpufenxi"></i></p>
                     <p style="margin-top: 3%"><h3>店铺分析</h3></p>
                     <p style="margin-top: 5%;font-family: myfont;line-height: 1.5rem" class="text-nowrap">
@@ -209,7 +209,7 @@
                         通过分析找到新的、最好的潜力竞品款
                     </p>
                 </div>
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 ">
                     <p><i  style="font-size: 4rem;color: #224e6b" class="fontFamily hhtx-baobeifenxi"></i></p>
                     <p style="margin-top: 3%"><h3>宝贝分析</h3></p>
                     <p style="margin-top: 5%;font-family: myfont;line-height: 1.5rem" class="text-nowrap">
@@ -291,8 +291,8 @@
         </div>
         <hr style="filter: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color="#6f5499" size="10"/>
         <div class="agileinfo_copyright">
-            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为电子商务股份有限公司 <span
-                    style="color: #f37d7c">苏ICP备17049592号-1</span></p>
+            <p>Copyright © 2016 All rights reserved 版权所有：上海悦为网络科技有限公司 <span
+                    style="color: #f37d7c">沪ICP备19030740号-1</span></p>
         </div>
     </div>
 </div>
@@ -480,6 +480,18 @@
 </script>
 <script type="module" src="../../js/config/api.js"></script>
 <script type="text/javascript" src="../../js/channels/dataServices.js"></script>
-<!-- //here ends scrolling icon -->
+<script type="text/javascript">
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+
+    })
+
+</script>
 </body>
 </html>

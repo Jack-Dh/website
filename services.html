@@ -572,6 +572,18 @@
 
     });
 </script>
-<!-- //here ends scrolling icon -->
+   <script type="text/javascript">
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+
+    })
+
+</script>
 </body>
 </html>

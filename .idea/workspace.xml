@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ea2f641-6286-4fcf-89fd-017ecf2d1db6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/flexible-bootstrap-carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/flexible-bootstrap-carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.SuperSlide.2.1.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/public/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/public/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case.html" beforeDir="false" afterPath="$PROJECT_DIR$/case.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Aboutus/Aboutus.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Aboutus/Aboutus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/case/brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/case/brand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/Customer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/cross-border.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/cross-border.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/dataServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/dataServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/logisticsing.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/logisticsing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/planning.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/planning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/visual.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/visual.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/channels/wholeShop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/channels/wholeShop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/integration/Hotstyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/integration/Hotstyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/integration/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/integration/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/integration/domain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/integration/domain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/integration/micro.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/integration/micro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/integration/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/integration/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/integration/wholedomain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/integration/wholedomain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/news/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/news/news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/Customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/Customer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/cross-border.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/cross-border.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/dataServices.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/dataServices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/logistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/logistics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/planning.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/planning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/visual.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/visual.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/channels/wholeShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/channels/wholeShop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/integration/Hotstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/integration/Hotstyle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/integration/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/integration/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/integration/domain.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/integration/domain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/integration/micro.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/integration/micro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/integration/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/integration/video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/integration/wholedomain.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/integration/wholedomain.html" afterDir="false" />
-    </list>
+    <list default="true" id="8ea2f641-6286-4fcf-89fd-017ecf2d1db6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -58,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="910" column="38" lean-forward="true" selection-start-line="798" selection-start-column="3" selection-end-line="910" selection-end-column="38" />
+            <state relative-caret-position="212">
+              <caret line="892" column="32" selection-start-line="892" selection-start-column="32" selection-end-line="892" selection-end-column="32" />
               <folding>
                 <element signature="n#link#6;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -116,15 +74,6 @@
                 <element signature="n#style#0;n#div#7;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#8;n#div#7;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/jQuery插件-基于Bootstrap的响应式Carousel轮播图插件-找优质资源就去【蓝文资源库】bluestep.cc/jQuery插件-基于Bootstrap的响应式Carousel轮播图插件-找优质资源就去【蓝文资源库】bluestep.cc/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="278" selection-start-line="278" selection-end-line="278" selection-end-column="113" />
             </state>
           </provider>
         </entry>
@@ -402,7 +351,7 @@
       <workItem from="1564535159844" duration="25436000" />
       <workItem from="1564570574795" duration="1225000" />
       <workItem from="1564621443959" duration="22961000" />
-      <workItem from="1564742033687" duration="12977000" />
+      <workItem from="1564742033687" duration="13081000" />
     </task>
     <task id="LOCAL-00001" summary="官网搭建">
       <created>1562926653880</created>
@@ -474,15 +423,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564630537890</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="样式调整">
+      <created>1564755109400</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564755109400</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351528000" />
+    <option name="totallyTimeSpent" value="351632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12012645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1694,8 +1649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="910" column="38" lean-forward="true" selection-start-line="798" selection-start-column="3" selection-end-line="910" selection-end-column="38" />
+        <state relative-caret-position="212">
+          <caret line="892" column="32" selection-start-line="892" selection-start-column="32" selection-end-line="892" selection-end-column="32" />
           <folding>
             <element signature="n#link#6;n#head#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />

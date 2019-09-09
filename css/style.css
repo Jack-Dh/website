@@ -6,7 +6,10 @@ html, body {
     background: #ffffff;
     margin: 0;
 }
-
+@font-face {
+    font-family: myfont;
+    src: url('../fonts/fonts/playfairdisplay-bold.ttf')
+}
 p, ul li, ol li {
     margin: 0;
     font-size: 15px;
@@ -498,7 +501,8 @@ ul.agile_forms li {
     text-align: center;
     font-style: italic;
     font-size: 1em;
-    font-weight: 600;
+    /*font-weight: 600;*/
+    font-family: myfont !important;
     color: #48506b;
     letter-spacing: 2px;
     margin-top: 1em;
@@ -685,7 +689,7 @@ p.w3l_sub_para_agile {
 
 .medile_agile_its_blue {
     background: #224e6b;
-    min-height: 400px;
+    height: 300px;
 }
 
 .medile_agile_its_blue h4 {
@@ -5395,7 +5399,7 @@ h3.agileinfo_sign {
 
 }
 
-@font-face {
+/* @font-face {
     font-family: myfont;
     src: url('../fonts/STHeitiTC-Medium.ttf')
 }
@@ -5403,14 +5407,14 @@ h3.agileinfo_sign {
 @font-face {
     font-family: SourceHanSansCN;
     src: url('../fonts/SourceHanSansCN-Regular.woff.ttf')
-}
+} */
 
 /*@font-face {*/
 /*    font-family: STHeitiSCMedium;*/
 /*    src: url('../fonts/STHeitiSCMedium.ttf')*/
 /*}*/
 
-@font-face {
+@/* font-face {
     font-family: Playfair;
     src: url("../fonts/Playfair Display.ttf");
 }
@@ -5423,7 +5427,7 @@ h3.agileinfo_sign {
 @font-face {
     font-family: bahnschrift;
     src: url('../fonts/bahnschrift.ttf')
-}
+} */
 
 .clients {
     font-family: myfont;
@@ -5508,7 +5512,8 @@ h3.agileinfo_sign {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    margin-top: 10px
+    margin-top: 10px;
+
 }
 
 .selected {
@@ -5522,7 +5527,7 @@ h3.agileinfo_sign {
 
 .bagJoin {
     background: url("../images/Join/06.png");
-    padding: 10%;
+    padding: 20px 0px 20px 0;
     width: 100%;
 
 }
@@ -5853,6 +5858,8 @@ h3.agileinfo_sign {
 .hovers {
     background-color: #224e6b !important;
 }
+
+
 /*.carousel{*/
 /*  height: 50%!important;*/
 /*}*/

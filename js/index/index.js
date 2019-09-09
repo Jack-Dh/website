@@ -109,8 +109,8 @@ function bangQuery() {
                 <div style="box-shadow: 2px 2px 2px 2px #ccc;margin-right: 76px;">
                 <img src="${item.picUrl}" style="width: 100%;" />
                  <div style="text-align: left;height: 260px;background-color: #fff;overflow: hidden;border-bottom: 8px solid #224e6b;margin-top: 10px">
-                  <h3 style="color: #2e6da4;padding: 20px;text-align: left">${item.title}</h3>
-                    <div style="text-align: left;padding: 20px 10px 0 10px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;">${item.content}</div>
+                  <h3 style="color: #2e6da4;padding: 20px;text-align: left;font-size: 23px">${item.title}</h3>
+                    <div style="text-align: left;padding: 0px 10px 0 10px;margin-top: 23px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;font-size: 15px">${item.content}</div>
                      </div>
                     </div>
                   </div>
@@ -122,12 +122,12 @@ function bangQuery() {
             let makeup = ''
             res.data.brandMap.美妆.forEach((item, index) => {
                 makeup += `
-                <div class="swiper-slide" style="min-width: 260px;padding:2px;background-color: #ffffff">
+              <div class="swiper-slide" style="min-width: 260px;padding:2px;background-color: #ffffff">
                 <div style="box-shadow: 2px 2px 2px 2px #ccc;margin-right: 76px;">
                 <img src="${item.picUrl}" style="width: 100%;" />
                  <div style="text-align: left;height: 260px;background-color: #fff;overflow: hidden;border-bottom: 8px solid #224e6b;margin-top: 10px">
-                  <h3 style="color: #2e6da4;padding: 20px;text-align: left">${item.title}</h3>
-                    <div style="text-align: left;padding: 20px 10px 0 10px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;">${item.content}</div>
+                  <h3 style="color: #2e6da4;padding: 20px;text-align: left;font-size: 23px">${item.title}</h3>
+                    <div style="text-align: left;padding: 0px 10px 0 10px;margin-top: 23px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;font-size: 15px">${item.content}</div>
                      </div>
                     </div>
                   </div>
@@ -141,12 +141,12 @@ function bangQuery() {
 
             res.data.brandMap.母婴.forEach((item, index) => {
                 toy += `
-              <div class="swiper-slide" style="min-width: 260px;padding:2px;background-color: #ffffff">
+             <div class="swiper-slide" style="min-width: 260px;padding:2px;background-color: #ffffff">
                 <div style="box-shadow: 2px 2px 2px 2px #ccc;margin-right: 76px;">
                 <img src="${item.picUrl}" style="width: 100%;" />
                  <div style="text-align: left;height: 260px;background-color: #fff;overflow: hidden;border-bottom: 8px solid #224e6b;margin-top: 10px">
-                  <h3 style="color: #2e6da4;padding: 20px;text-align: left">${item.title}</h3>
-                    <div style="text-align: left;padding: 20px 10px 0 10px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;">${item.content}</div>
+                  <h3 style="color: #2e6da4;padding: 20px;text-align: left;font-size: 23px">${item.title}</h3>
+                    <div style="text-align: left;padding: 0px 10px 0 10px;margin-top: 23px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;font-size: 15px">${item.content}</div>
                      </div>
                     </div>
                   </div>
@@ -159,12 +159,12 @@ function bangQuery() {
             let furniture = ``
             res.data.brandMap.家居.forEach((item, index) => {
                 furniture += `
-               <div class="swiper-slide" style="min-width: 260px;padding:2px;background-color: #ffffff">
+             <div class="swiper-slide" style="min-width: 260px;padding:2px;background-color: #ffffff">
                 <div style="box-shadow: 2px 2px 2px 2px #ccc;margin-right: 76px;">
                 <img src="${item.picUrl}" style="width: 100%;" />
                  <div style="text-align: left;height: 260px;background-color: #fff;overflow: hidden;border-bottom: 8px solid #224e6b;margin-top: 10px">
-                  <h3 style="color: #2e6da4;padding: 20px;text-align: left">${item.title}</h3>
-                    <div style="text-align: left;padding: 20px 10px 0 10px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;">${item.content}</div>
+                  <h3 style="color: #2e6da4;padding: 20px;text-align: left;font-size: 23px">${item.title}</h3>
+                    <div style="text-align: left;padding: 0px 10px 0 10px;margin-top: 23px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;font-size: 15px">${item.content}</div>
                      </div>
                     </div>
                   </div>

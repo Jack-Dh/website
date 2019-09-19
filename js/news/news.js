@@ -38,7 +38,7 @@ function pages(category='公司新闻',total) {
                          style=" width: 48%;background: #ffffff;padding: 0;">
                         <div class="col-md-6" style="padding: 0;">
                             <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
+                                 src=${item.picUrl}>
                         </div>
                         <div class=" col-md-6 text-left">
                             <h4 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">${item.title}</h4>
@@ -80,23 +80,26 @@ function bangQuery() {
             // total=res.data.NewsList.total
             $.cookie('total', res.data.NewsList.total, {path: '/'});//储存到cookie中
             // 轮播
-            let dom
-            res.data.BannerList.forEach((item, index) => {
-                let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
-
-                if (index === 0) {
-                    dom = `<div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                } else {
-                    dom = `<div class="item">
-           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                }
-
-                $('#dog').append(dogdom)
-                $('#shuffling').append(dom)
-            })
+            let i=`<img style="max-width: 100%" src="${res.data.BannerList[0].picUrl}">`
+            // $('#L').children().remove()
+            $('#L').append(i)
+        //     let dom
+        //     res.data.BannerList.forEach((item, index) => {
+        //         let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
+        //
+        //         if (index === 0) {
+        //             dom = `<div class="item active">
+        //   <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         } else {
+        //             dom = `<div class="item">
+        //    <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         }
+        //
+        //         $('#dog').append(dogdom)
+        //         $('#shuffling').append(dom)
+        //     })
             pages('公司新闻',res.data.NewsList.total)
 //             res.data.NewsList.list.forEach(item => {
 //                 let dom = `<div class="container">
@@ -154,7 +157,7 @@ function tagger(val) {
                          style=" width: 48%;background: #ffffff;padding: 0;">
                         <div class="col-md-6" style="padding: 0;">
                             <img style="width: 100%;height: auto" class="fa fa-bar-chart"
-                                 src="images/index/272-194-22.jpg">
+                                 src=${item.picUrl}>
                         </div>
                         <div class=" col-md-6 text-left">
                             <h4 style="color: #2e6da4;margin-bottom: 10px;margin-top: 6%">${item.title}</h4>

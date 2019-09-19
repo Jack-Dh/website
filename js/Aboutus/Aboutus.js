@@ -18,23 +18,26 @@ function bangQuery() {
             console.log(res)
 
             // 轮播
-            let dom
-            res.data.BannerList.forEach((item, index) => {
-                let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
-
-                if (index === 0) {
-                    dom = `<div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                } else {
-                    dom = `<div class="item">
-           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                }
-
-                $('#dog').append(dogdom)
-                $('#shuffling').append(dom)
-            })
+            let i=`<img style="max-width: 100%" src="${res.data.BannerList[0].picUrl}">`
+            // $('#L').children().remove()
+            $('#L').append(i)
+        //     let dom
+        //     res.data.BannerList.forEach((item, index) => {
+        //         let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
+        //
+        //         if (index === 0) {
+        //             dom = `<div class="item active">
+        //   <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         } else {
+        //             dom = `<div class="item">
+        //    <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         }
+        //
+        //         $('#dog').append(dogdom)
+        //         $('#shuffling').append(dom)
+        //     })
 
             //关于悦为
             let yueweidom=`

@@ -63,13 +63,11 @@ function bangQuery() {
             arr.forEach(item=>{
                 let dom=`
                <div class="col-sm-3" style="">
-               <a href=${item.link} target="_blank">
                 <img src=${item.picUrl}>
                 <p style="margin: 10px">
                 ${item.title}
                 </p>
                   <span>  ${item.content}</span>
-                  </a>
                 </div>
                 `
                 $('#zhaopingtwo').append(dom)
@@ -77,13 +75,13 @@ function bangQuery() {
             brr.forEach(item=>{
                 let dom=`
                <div class="col-sm-3" style="">
-                  <a href=${item.link} target="_blank">
+                  
                 <img src=${item.picUrl}>
                 <p style="margin: 10px">
                 ${item.title}
                 </p>
               <span>  ${item.content}</span>
-              </a>
+            
                 </div>
                 `
                 $('#zhaopingOne').append(dom)

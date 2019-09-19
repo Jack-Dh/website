@@ -77,7 +77,7 @@ function bangQuery() {
                 // $('#shuffling').html(dom)
             }
 
-            var mySwiper = new Swiper('.swiper-wrapperlun',{
+            var mySwiper = new Swiper('.swiper-wrapperlun', {
                 pagination: {
                     el: '.swiper-pagination',
                 },
@@ -183,21 +183,30 @@ function bangQuery() {
 
 
             res.data.businessMap.整店代运营服务.forEach(item => {
-                let dom = `<div class="swiper-slide"><img style="max-width: 200px" src="${item.picUrl}"/></div>`
+                let dom = `<div class="swiper-slide">
+<a href="${item.link}">
+<img style="max-width: 200px" src="${item.picUrl}"/>
+</a>
+</div>`
                 $('#daiyunying').append(dom)
             })
 
             var mySwiperx = new Swiper('.swiper-containeryx', {
-                    slidesPerView: 4,
-                    slidesPerGroup: 1,
-                })
+                slidesPerView: 4,
+                slidesPerGroup: 1,
+            })
 
 
             // let wrapdaiyunying = `<div class="swiper-wrapper" >${daiyunying}</div>`
             // $('#daiyunying').append(wrapdaiyunying)
 
             res.data.businessMap.整合营销服务.forEach(item => {
-                let dom = `<div class="swiper-slide"><img style="max-width: 200px" src="${item.picUrl}"/></div>`
+                let dom = `
+<div class="swiper-slide"  >
+<a href="${item.link}">
+<img style="max-width: 200px" src="${item.picUrl}"/>
+</a>
+</div>`
                 $('#yingxiao').append(dom)
             })
 
@@ -220,7 +229,6 @@ function bangQuery() {
                 mySwiperx.slideNext();
 
             })
-
 
 
             var mySwiper = new Swiper('.swiper-containers', {

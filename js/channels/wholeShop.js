@@ -15,23 +15,26 @@ function bangQuery() {
              * 轮播
              * */
                 // 轮播
-            let domshuffling
-            res.data.bannerList.forEach((item, index) => {
-                let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
-
-                if (index === 0) {
-                    domshuffling = `<div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                } else {
-                    domshuffling = `<div class="item">
-           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                }
-
-                $('#dog').append(dogdom)
-                $('#shuffling').append(domshuffling)
-            })
+            let i=`<img style="max-width: 100%" src="${res.data.bannerList[0].picUrl}">`
+            // $('#L').children().remove()
+            $('#L').append(i)
+        //     let domshuffling
+        //     res.data.bannerList.forEach((item, index) => {
+        //         let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
+        //
+        //         if (index === 0) {
+        //             domshuffling = `<div class="item active">
+        //   <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         } else {
+        //             domshuffling = `<div class="item">
+        //    <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         }
+        //
+        //         $('#dog').append(dogdom)
+        //         $('#shuffling').append(domshuffling)
+        //     })
 
             // 整店托管代运营
           /*   let crossdom = `
@@ -55,7 +58,7 @@ function bangQuery() {
 
             // 整店托管代运营流程
         /*     let operateListdom = `
-          
+
         <div>
             <img style="max-width: 100%" class="img-responsive center-block"
                  src=${res.data.dataList[0].picUrl}>

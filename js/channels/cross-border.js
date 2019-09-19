@@ -15,23 +15,26 @@ function bangQuery() {
              * 轮播
              * */
                 // 轮播
-            let doms
-            res.data.bannerList.forEach((item, index) => {
-                let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
-
-                if (index === 0) {
-                    doms = `<div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                } else {
-                    doms = `<div class="item">
-           <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
-        </div>`
-                }
-
-                $('#dog').append(dogdom)
-                $('#shuffling').append(doms)
-            })
+            let i=`<img style="max-width: 100%" src="${res.data.bannerList[0].picUrl}">`
+            // $('#L').children().remove()
+            $('#L').append(i)
+        //     let doms
+        //     res.data.bannerList.forEach((item, index) => {
+        //         let dogdom=` <li data-target="#carousel-example-generic" data-slide-to=${index} class=""></li>`
+        //
+        //         if (index === 0) {
+        //             doms = `<div class="item active">
+        //   <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         } else {
+        //             doms = `<div class="item">
+        //    <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide [900x500]" src=${item.picUrl} data-holder-rendered="true">
+        // </div>`
+        //         }
+        //
+        //         $('#dog').append(dogdom)
+        //         $('#shuffling').append(doms)
+        //     })
 
 
             // 跨境业务
@@ -41,7 +44,7 @@ function bangQuery() {
             ${res.data.crossList[0].content}
             </span>
         </div>
-             <div class="col-md-6">
+             <div class="col-md-6" style="margin-top: 20px">
             <img style="max-width: 70%" class="img-responsive center-block" src=${res.data.crossList[0].picUrl}>
             </div>
 `

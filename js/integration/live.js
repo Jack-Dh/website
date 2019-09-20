@@ -20,7 +20,8 @@ function bangQuery() {
 
 
             //服务案例
-            res.data.caseList.forEach(item => {
+            console.log(res.data)
+            res.data.broadcastList.forEach(item => {
                 let casedom = `
 
     <div class="col-md-3">

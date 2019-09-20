@@ -59,19 +59,19 @@ function bangQuery(type = 2, category = '服饰') {
                 let threearr=res.data.casesList.splice(0,4)
                 let fourtwoarr=res.data.casesList.splice(0,4)
                 arr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.one').append(dom)
                 })
                 twoarr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.two').append(dom)
                 })
                 threearr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.three').append(dom)
                 })
                 fourtwoarr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.four').append(dom)
                 })
                 // res.data.casesList.forEach((item, index) => {
@@ -98,19 +98,19 @@ function bangQuery(type = 2, category = '服饰') {
                 let threearr=res.data.casesList.splice(0,4)
                 let fourtwoarr=res.data.casesList.splice(0,4)
                 arr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.one').append(dom)
                 })
                 twoarr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.two').append(dom)
                 })
                 threearr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.three').append(dom)
                 })
                 fourtwoarr.forEach(item=>{
-                    let dom = `<img class="col-xs-3 mouver item"  id=${item.id} src=${item.picUrl}>`
+                    let dom = `<img class="col-xs-3  item"  id=${item.id} src=${item.picUrl}>`
                     $('.four').append(dom)
                 })
                 // res.data.casesList.forEach((item, index) => {

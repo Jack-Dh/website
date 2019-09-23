@@ -436,13 +436,23 @@
 </script>
 <!-- //stats -->
 <script>
+    // $(function () {
+    //     $('.CustomerIng').mouseover(function () {
+    //         $(this).addClass('CustomerCase').siblings().removeClass('CustomerCase')
+    //     }).mouseleave(function () {
+    //         $('.CustomerIng').removeClass('CustomerCase')
+    //     })
+    //
+    // })
+
+
     $(function () {
-        $('.CustomerIng').mouseover(function () {
+        $('body').on("mouseover",".CustomerIng",function () {
             $(this).addClass('CustomerCase').siblings().removeClass('CustomerCase')
-        }).mouseleave(function () {
+        })
+        $('body').on("mouseleave",".CustomerIng",function () {
             $('.CustomerIng').removeClass('CustomerCase')
         })
-
     })
 </script>
 

@@ -83,7 +83,7 @@ function bangQuery() {
 
 
             let ysDomtwo=` <div class="col-md-4 text-center CustomerIng">
-                <p><i style="font-size: 3rem" class="fontFamily hhtx-weibiaoti--"></i></p>
+                <p><i style="font-size: 3rem" class="fontFamily hhtx-peixun"></i></p>
                 <p style="margin-top: 3%">
                 <h3>${res.data.advantageList[3].title}</h3></p>
                 <div style="margin-top: 5%;font-family: myfont;line-height: 1.5rem">
@@ -91,7 +91,7 @@ function bangQuery() {
                 </div>
             </div>
             <div class="col-md-4 text-center CustomerIng">
-                <p><i style="font-size: 3rem" class="fontFamily hhtx--tiexinguanli"></i></p>
+                <p><i style="font-size: 3rem" class="fontFamily hhtx-wuyou"></i></p>
                 <p style="margin-top: 3%">
                  <h3>${res.data.advantageList[4].title}</h3></p>
                 <div style="margin-top: 5%;font-family: myfont;line-height: 1.5rem">
@@ -99,7 +99,7 @@ function bangQuery() {
                 </div>
             </div>
             <div class="col-md-4 text-center CustomerIng">
-                <p><i style="font-size: 3rem" class="fontFamily hhtx-handcoins"></i></p>
+                <p><i style="font-size: 3rem" class="fontFamily hhtx-jizhongshi"></i></p>
                 <p style="margin-top: 3%">
                 <h3>${res.data.advantageList[5].title}</h3></p>
                 <div style="margin-top: 5%;font-family: myfont;line-height: 1.5rem">

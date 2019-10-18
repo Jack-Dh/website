@@ -46,7 +46,7 @@ function pages(category='公司新闻',total) {
 ">
                                ${item.content.replace(/<[^<>]+>/g, '')}</div>
                             <span style="color: #2e6da4"><a href="nesdeltet.html?id=${item.id}"  target="_blank">查看详情</a></span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
+                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>${item.updateTime}</p>
                         </div>
                     </div>
                 </div>
@@ -165,9 +165,10 @@ function tagger(val) {
 ">
                                ${item.content.replace(/<[^<>]+>/g, '')}</div>
                             <span style="color: #2e6da4">查看详情</span>
-                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>2019/7/12</p>
+                            <p style="color: #8f8f8e"><span class="glyphicon glyphicon-time"></span>${item.updateTime}</p>
                         </div>
                     </div>
+                    
                 </div>
             </div>`
                     $('#home').append(dom)

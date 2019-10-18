@@ -184,7 +184,7 @@ function bangQuery() {
 
             res.data.businessMap.整店代运营服务.forEach(item => {
                 let dom = `<div class="swiper-slide">
-<a href="${item.link}">
+<a href="${item.link}" target="blank">
 <img style="max-width: 200px" src="${item.picUrl}"/>
 </a>
 </div>`
@@ -203,7 +203,7 @@ function bangQuery() {
             res.data.businessMap.整合营销服务.forEach(item => {
                 let dom = `
 <div class="swiper-slide"  >
-<a href="${item.link}">
+<a href="${item.link}" target="blank">
 <img style="max-width: 200px" src="${item.picUrl}"/>
 </a>
 </div>`
